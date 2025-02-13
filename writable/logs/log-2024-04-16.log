@@ -1,0 +1,40 @@
+ERROR - 2024-04-16 15:09:11 --> mysqli_sql_exception: Duplicate entry '0323150006' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO asi...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO asi...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO asi...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(20): CodeIgniter\Database\BaseConnection->query('INSERT INTO asi...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(36): App\Models\Principal->insertarAsiento(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-04-16 15:09:11 --> Duplicate entry '0323150006' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Principal.php(20): CodeIgniter\Database\BaseConnection->query('INSERT INTO asientos VALUES (?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerPrincipal.php(36): App\Models\Principal->insertarAsiento([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-16 21:00:35 --> mysqli_sql_exception: Duplicate entry '0322150015' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO asi...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO asi...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO asi...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(20): CodeIgniter\Database\BaseConnection->query('INSERT INTO asi...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(36): App\Models\Principal->insertarAsiento(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-04-16 21:00:35 --> Duplicate entry '0322150015' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Principal.php(20): CodeIgniter\Database\BaseConnection->query('INSERT INTO asientos VALUES (?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerPrincipal.php(36): App\Models\Principal->insertarAsiento([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

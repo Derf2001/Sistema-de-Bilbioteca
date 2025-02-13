@@ -1,0 +1,32 @@
+ERROR - 2024-02-16 18:39:59 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('PR1423A001')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('PR1423A001')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-16 18:39:59 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('PR1423A001')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('PR1423A001')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 19:51:58 --> Call to undefined function App\Controllers\convertirMayusculas()
+in APPPATH\Controllers\PdfController.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PdfController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 19:52:06 --> Call to undefined function App\Controllers\convertirMayusculas()
+in APPPATH\Controllers\PdfController.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PdfController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

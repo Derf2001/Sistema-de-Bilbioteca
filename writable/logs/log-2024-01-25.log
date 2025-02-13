@@ -1,0 +1,1335 @@
+ERROR - 2024-01-25 04:14:46 --> mysqli_sql_exception: Table 'biblioteca.asientos' doesn't exist in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT Asiento ...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Asiento ...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Asiento ...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(57): CodeIgniter\Database\BaseConnection->query('SELECT Asiento ...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(70): App\Models\Principal->ListarAsientos()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->listar_asientos()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 04:14:46 --> Table 'biblioteca.asientos' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Principal.php(57): CodeIgniter\Database\BaseConnection->query('SELECT Asiento FROM asientos')
+ 2 APPPATH\Controllers\ControllerPrincipal.php(70): App\Models\Principal->ListarAsientos()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->listar_asientos()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 04:14:50 --> mysqli_sql_exception: Table 'biblioteca.asientos' doesn't exist in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT Asiento ...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Asiento ...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Asiento ...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(57): CodeIgniter\Database\BaseConnection->query('SELECT Asiento ...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(70): App\Models\Principal->ListarAsientos()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->listar_asientos()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 04:14:50 --> Table 'biblioteca.asientos' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Principal.php(57): CodeIgniter\Database\BaseConnection->query('SELECT Asiento FROM asientos')
+ 2 APPPATH\Controllers\ControllerPrincipal.php(70): App\Models\Principal->ListarAsientos()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->listar_asientos()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 04:14:54 --> mysqli_sql_exception: Table 'biblioteca.asientos' doesn't exist in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT Asiento ...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Asiento ...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Asiento ...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(57): CodeIgniter\Database\BaseConnection->query('SELECT Asiento ...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(70): App\Models\Principal->ListarAsientos()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->listar_asientos()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 04:14:54 --> Table 'biblioteca.asientos' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Principal.php(57): CodeIgniter\Database\BaseConnection->query('SELECT Asiento FROM asientos')
+ 2 APPPATH\Controllers\ControllerPrincipal.php(70): App\Models\Principal->ListarAsientos()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->listar_asientos()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 04:14:55 --> mysqli_sql_exception: Table 'biblioteca.asientos' doesn't exist in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT Asiento ...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Asiento ...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Asiento ...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(57): CodeIgniter\Database\BaseConnection->query('SELECT Asiento ...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(70): App\Models\Principal->ListarAsientos()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->listar_asientos()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 04:14:55 --> Table 'biblioteca.asientos' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Principal.php(57): CodeIgniter\Database\BaseConnection->query('SELECT Asiento FROM asientos')
+ 2 APPPATH\Controllers\ControllerPrincipal.php(70): App\Models\Principal->ListarAsientos()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->listar_asientos()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 04:15:10 --> mysqli_sql_exception: Table 'biblioteca.asientos' doesn't exist in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT Asiento ...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Asiento ...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Asiento ...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(57): CodeIgniter\Database\BaseConnection->query('SELECT Asiento ...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(70): App\Models\Principal->ListarAsientos()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->listar_asientos()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 04:15:10 --> Table 'biblioteca.asientos' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Principal.php(57): CodeIgniter\Database\BaseConnection->query('SELECT Asiento FROM asientos')
+ 2 APPPATH\Controllers\ControllerPrincipal.php(70): App\Models\Principal->ListarAsientos()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->listar_asientos()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 04:15:33 --> mysqli_sql_exception: Table 'biblioteca.asientos' doesn't exist in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT Asiento ...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Asiento ...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Asiento ...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(57): CodeIgniter\Database\BaseConnection->query('SELECT Asiento ...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(70): App\Models\Principal->ListarAsientos()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->listar_asientos()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 04:15:33 --> Table 'biblioteca.asientos' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Principal.php(57): CodeIgniter\Database\BaseConnection->query('SELECT Asiento FROM asientos')
+ 2 APPPATH\Controllers\ControllerPrincipal.php(70): App\Models\Principal->ListarAsientos()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->listar_asientos()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 04:23:04 --> mysqli_sql_exception: Table 'biblioteca.asientos' doesn't exist in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT Asiento ...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Asiento ...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Asiento ...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(57): CodeIgniter\Database\BaseConnection->query('SELECT Asiento ...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(70): App\Models\Principal->ListarAsientos()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->listar_asientos()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 04:23:04 --> Table 'biblioteca.asientos' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Principal.php(57): CodeIgniter\Database\BaseConnection->query('SELECT Asiento FROM asientos')
+ 2 APPPATH\Controllers\ControllerPrincipal.php(70): App\Models\Principal->ListarAsientos()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->listar_asientos()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 04:24:58 --> mysqli_sql_exception: Table 'biblioteca.asientos' doesn't exist in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT Asiento ...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Asiento ...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Asiento ...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(57): CodeIgniter\Database\BaseConnection->query('SELECT Asiento ...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(70): App\Models\Principal->ListarAsientos()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->listar_asientos()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 04:24:58 --> Table 'biblioteca.asientos' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Principal.php(57): CodeIgniter\Database\BaseConnection->query('SELECT Asiento FROM asientos')
+ 2 APPPATH\Controllers\ControllerPrincipal.php(70): App\Models\Principal->ListarAsientos()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->listar_asientos()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 04:25:29 --> mysqli_sql_exception: Table 'biblioteca.asientos' doesn't exist in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM a...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM a...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM a...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(61): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(82): App\Models\Principal->VerificarAsiento('2123qwq23123q12')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->verificar_asiento('2123qwq23123q12')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 04:25:29 --> Table 'biblioteca.asientos' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Principal.php(61): CodeIgniter\Database\BaseConnection->query('SELECT * FROM asientos WHERE NoCuenta=?', [...])
+ 2 APPPATH\Controllers\ControllerPrincipal.php(82): App\Models\Principal->VerificarAsiento('2123qwq23123q12')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->verificar_asiento('2123qwq23123q12')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 04:25:48 --> mysqli_sql_exception: Table 'biblioteca.asientos' doesn't exist in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM a...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM a...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM a...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(61): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(82): App\Models\Principal->VerificarAsiento('1212')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->verificar_asiento('1212')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 04:25:48 --> Table 'biblioteca.asientos' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Principal.php(61): CodeIgniter\Database\BaseConnection->query('SELECT * FROM asientos WHERE NoCuenta=?', [...])
+ 2 APPPATH\Controllers\ControllerPrincipal.php(82): App\Models\Principal->VerificarAsiento('1212')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->verificar_asiento('1212')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 04:40:03 --> mysqli_sql_exception: Unknown column 'bu.motivo' in 'field list' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT\r\n       ...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\r\n       ...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#3 C:\xampp\htdocs\Bib\app\Models\Bloqueos.php(24): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ListarBloqueos()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 04:40:03 --> Unknown column 'bu.motivo' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Bloqueos.php(24): CodeIgniter\Database\BaseConnection->query('SELECT
+        bu.NoCuenta,
+        u.Nombre,
+        u.area,
+        IFNULL(p.cargo, IFNULL(ad.cargo, \'\')) AS Cargo,
+        a.semestre,
+        a.grupo,
+        bu.motivo,
+        bu.FechaBloqueo,
+        bu.FechaDesbloqueo
+    FROM
+        blocked_user bu
+    LEFT JOIN
+        user u ON bu.NoCuenta = u.NoCuenta
+    LEFT JOIN
+        alumno a ON a.NoCuenta = u.NoCuenta
+    LEFT JOIN
+        profesor p ON p.NoCuenta = u.NoCuenta
+    LEFT JOIN
+        administrativo ad ON ad.NoCuenta = u.NoCuenta')
+ 2 APPPATH\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ListarBloqueos()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 04:41:15 --> mysqli_sql_exception: Unknown column 'bu.motivo' in 'field list' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT\r\n       ...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\r\n       ...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#3 C:\xampp\htdocs\Bib\app\Models\Bloqueos.php(24): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ListarBloqueos()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 04:41:15 --> Unknown column 'bu.motivo' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Bloqueos.php(24): CodeIgniter\Database\BaseConnection->query('SELECT
+        bu.NoCuenta,
+        u.Nombre,
+        u.area,
+        IFNULL(p.cargo, IFNULL(ad.cargo, \'\')) AS Cargo,
+        a.semestre,
+        a.grupo,
+        bu.motivo,
+        bu.FechaBloqueo,
+        bu.FechaDesbloqueo
+    FROM
+        blocked_user bu
+    LEFT JOIN
+        user u ON bu.NoCuenta = u.NoCuenta
+    LEFT JOIN
+        alumno a ON a.NoCuenta = u.NoCuenta
+    LEFT JOIN
+        profesor p ON p.NoCuenta = u.NoCuenta
+    LEFT JOIN
+        administrativo ad ON ad.NoCuenta = u.NoCuenta')
+ 2 APPPATH\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ListarBloqueos()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 04:41:53 --> mysqli_sql_exception: Table 'biblioteca.asientos' doesn't exist in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT Asiento ...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Asiento ...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Asiento ...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(57): CodeIgniter\Database\BaseConnection->query('SELECT Asiento ...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(70): App\Models\Principal->ListarAsientos()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->listar_asientos()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 04:41:53 --> Table 'biblioteca.asientos' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Principal.php(57): CodeIgniter\Database\BaseConnection->query('SELECT Asiento FROM asientos')
+ 2 APPPATH\Controllers\ControllerPrincipal.php(70): App\Models\Principal->ListarAsientos()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->listar_asientos()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 17:24:55 --> mysqli_sql_exception: Table 'biblioteca.asientos' doesn't exist in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT Asiento ...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Asiento ...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Asiento ...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(57): CodeIgniter\Database\BaseConnection->query('SELECT Asiento ...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(70): App\Models\Principal->ListarAsientos()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->listar_asientos()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 17:24:55 --> Table 'biblioteca.asientos' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Principal.php(57): CodeIgniter\Database\BaseConnection->query('SELECT Asiento FROM asientos')
+ 2 APPPATH\Controllers\ControllerPrincipal.php(70): App\Models\Principal->ListarAsientos()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->listar_asientos()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 17:26:15 --> mysqli_sql_exception: Table 'biblioteca.asientos' doesn't exist in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM a...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM a...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM a...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(61): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(82): App\Models\Principal->VerificarAsiento('222')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->verificar_asiento('222')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 17:26:15 --> Table 'biblioteca.asientos' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Principal.php(61): CodeIgniter\Database\BaseConnection->query('SELECT * FROM asientos WHERE NoCuenta=?', [...])
+ 2 APPPATH\Controllers\ControllerPrincipal.php(82): App\Models\Principal->VerificarAsiento('222')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->verificar_asiento('222')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 17:36:05 --> mysqli_sql_exception: Incorrect number of arguments for PROCEDURE biblioteca.InsertarRecord; expected 2, got 3 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarRe...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarRe...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarRe...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarRe...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(58): App\Models\Principal->insertarRecord(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->add2()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 17:36:05 --> Incorrect number of arguments for PROCEDURE biblioteca.InsertarRecord; expected 2, got 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Principal.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarRecord(?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerPrincipal.php(58): App\Models\Principal->insertarRecord([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->add2()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 17:43:41 --> mysqli_sql_exception: Incorrect number of arguments for PROCEDURE biblioteca.InsertarRecord; expected 2, got 3 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarRe...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarRe...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarRe...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarRe...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(58): App\Models\Principal->insertarRecord(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->add2()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 17:43:41 --> Incorrect number of arguments for PROCEDURE biblioteca.InsertarRecord; expected 2, got 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Principal.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarRecord(?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerPrincipal.php(58): App\Models\Principal->insertarRecord([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->add2()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-25 17:59:56 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+in APPPATH\Controllers\ControllerBloqueos.php on line 127.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->buscarRegistros()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:19:50 --> mysqli_sql_exception: Incorrect number of arguments for PROCEDURE biblioteca.InsertarRecord; expected 2, got 3 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarRe...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarRe...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarRe...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarRe...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(58): App\Models\Principal->insertarRecord(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->add2()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:19:50 --> Incorrect number of arguments for PROCEDURE biblioteca.InsertarRecord; expected 2, got 3
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Principal.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarRecord(?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerPrincipal.php(58): App\Models\Principal->insertarRecord([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->add2()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:47:52 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:47:52 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:47:54 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:47:54 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:47:56 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:47:56 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:47:56 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:47:56 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:47:56 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:47:56 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:47:57 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:47:57 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:47:59 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:47:59 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:47:59 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:47:59 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:47:59 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:47:59 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:47:59 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:47:59 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:48:00 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:48:00 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:48:00 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:48:00 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:48:00 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:48:00 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:48:00 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:48:00 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:48:00 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:48:00 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:48:00 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:48:00 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:48:00 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:48:00 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:48:00 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:48:00 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:48:01 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:48:01 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:48:01 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:48:01 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:48:01 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:48:01 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:48:01 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:48:01 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:48:01 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:48:01 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:48:01 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:48:01 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:48:02 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:48:02 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:48:02 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:48:02 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:48:02 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:48:02 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:48:02 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:48:02 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:48:02 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:48:02 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:48:03 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:48:03 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:48:12 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:48:12 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:50:44 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarPr...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarPr...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarPr...')
+#3 C:\xampp\htdocs\Bib\app\Models\Profesores.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarPr...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControladorProfesor.php(90): App\Models\Profesores->insertarProfesor(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControladorProfesor->addProfesor()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControladorProfesor))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:50:44 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Profesores.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarProfesor(?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControladorProfesor.php(90): App\Models\Profesores->insertarProfesor([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControladorProfesor->addProfesor()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControladorProfesor))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:55:39 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAd...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAd...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAd...')
+#3 C:\xampp\htdocs\Bib\app\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAd...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdministrativo.php(56): App\Models\Administrativos->insertarAdministrativo(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:55:39 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAdministrativo(?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAdministrativo.php(56): App\Models\Administrativos->insertarAdministrativo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:55:41 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAd...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAd...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAd...')
+#3 C:\xampp\htdocs\Bib\app\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAd...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdministrativo.php(56): App\Models\Administrativos->insertarAdministrativo(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:55:41 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAdministrativo(?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAdministrativo.php(56): App\Models\Administrativos->insertarAdministrativo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:55:41 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAd...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAd...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAd...')
+#3 C:\xampp\htdocs\Bib\app\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAd...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdministrativo.php(56): App\Models\Administrativos->insertarAdministrativo(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:55:41 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAdministrativo(?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAdministrativo.php(56): App\Models\Administrativos->insertarAdministrativo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:55:41 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAd...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAd...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAd...')
+#3 C:\xampp\htdocs\Bib\app\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAd...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdministrativo.php(56): App\Models\Administrativos->insertarAdministrativo(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:55:41 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAdministrativo(?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAdministrativo.php(56): App\Models\Administrativos->insertarAdministrativo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:55:42 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAd...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAd...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAd...')
+#3 C:\xampp\htdocs\Bib\app\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAd...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdministrativo.php(56): App\Models\Administrativos->insertarAdministrativo(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:55:42 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAdministrativo(?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAdministrativo.php(56): App\Models\Administrativos->insertarAdministrativo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:55:42 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAd...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAd...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAd...')
+#3 C:\xampp\htdocs\Bib\app\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAd...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdministrativo.php(56): App\Models\Administrativos->insertarAdministrativo(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:55:42 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAdministrativo(?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAdministrativo.php(56): App\Models\Administrativos->insertarAdministrativo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 18:55:42 --> mysqli_sql_exception: Duplicate entry '375' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAd...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAd...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAd...')
+#3 C:\xampp\htdocs\Bib\app\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAd...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdministrativo.php(56): App\Models\Administrativos->insertarAdministrativo(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 18:55:42 --> Duplicate entry '375' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAdministrativo(?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAdministrativo.php(56): App\Models\Administrativos->insertarAdministrativo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 21:28:37 --> mysqli_sql_exception: Duplicate entry 'dwdawq' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 21:28:37 --> Duplicate entry 'dwdawq' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 21:30:20 --> mysqli_sql_exception: Duplicate entry 'dwdawq' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 21:30:20 --> Duplicate entry 'dwdawq' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 21:34:11 --> mysqli_sql_exception: Duplicate entry 'dwdawq' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 21:34:11 --> Duplicate entry 'dwdawq' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 21:34:12 --> mysqli_sql_exception: Duplicate entry 'dwdawq' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 21:34:12 --> Duplicate entry 'dwdawq' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-25 21:51:38 --> Undefined variable $query
+in APPPATH\Views\alumnos.php on line 240.
+ 1 APPPATH\Views\alumnos.php(240): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $query', 'C:\\xampp\\htdocs\\Bib\\app\\Views\\alumnos.php', 240)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Bib\\app\\Views\\alumnos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('alumnos', [], true)
+ 5 APPPATH\Controllers\ControllerAlumno.php(22): view('alumnos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 21:53:36 --> mysqli_sql_exception: Duplicate entry 'dwdawq' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 21:53:36 --> Duplicate entry 'dwdawq' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 21:54:09 --> mysqli_sql_exception: Duplicate entry 'dwdawq' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 21:54:09 --> Duplicate entry 'dwdawq' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-25 21:54:15 --> mysqli_sql_exception: Duplicate entry 'dwdawq' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-25 21:54:15 --> Duplicate entry 'dwdawq' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

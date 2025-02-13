@@ -1,0 +1,355 @@
+ERROR - 2024-02-21 02:02:37 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'biblioteca', 3306, '', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(58): CodeIgniter\Database\BaseConnection->query('SELECT Asiento ...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(14): App\Models\Principal->ListarRecord()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->index()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Bib\app\Models\Principal.php(58): CodeIgniter\Database\BaseConnection->query('SELECT Asiento ...')
+#3 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(14): App\Models\Principal->ListarRecord()
+#4 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->index()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-21 02:02:37 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Principal.php(58): CodeIgniter\Database\BaseConnection->query('SELECT Asiento FROM record')
+ 3 APPPATH\Controllers\ControllerPrincipal.php(14): App\Models\Principal->ListarRecord()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-21 03:29:15 --> Class "App\Controllers\Monitoreo" not found
+in APPPATH\Controllers\ControllerMonitoreo_Computo.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo_Computo->dropSala()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo_Computo))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-21 17:02:40 --> Class "App\Controllers\Monitoreo" not found
+in APPPATH\Controllers\ControllerMonitoreo_Computo.php on line 165.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo_Computo->dropSala()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo_Computo))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-21 17:07:15 --> Class "App\Controllers\Monitoreo" not found
+in APPPATH\Controllers\ControllerMonitoreo_Computo.php on line 165.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo_Computo->dropSala()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo_Computo))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-21 17:07:24 --> Class "App\Controllers\Monitoreo" not found
+in APPPATH\Controllers\ControllerMonitoreo_Computo.php on line 165.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo_Computo->dropSala()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo_Computo))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-21 17:07:35 --> Class "App\Controllers\Monitoreo" not found
+in APPPATH\Controllers\ControllerMonitoreo_Computo.php on line 165.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo_Computo->dropSala()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo_Computo))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-21 17:09:45 --> Class "App\Controllers\Monitoreo" not found
+in APPPATH\Controllers\ControllerMonitoreo_Computo.php on line 165.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo_Computo->dropSala()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo_Computo))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-21 17:24:13 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'biblioteca5' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'biblioteca5', 3306, '', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Bib\app\Models\Bloqueos.php(25): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ListarBloqueos()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'biblioteca5' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Bib\app\Models\Bloqueos.php(25): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#3 C:\xampp\htdocs\Bib\app\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ListarBloqueos()
+#4 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-21 17:24:13 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'biblioteca5'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Bloqueos.php(25): CodeIgniter\Database\BaseConnection->query('SELECT
+        bu.idBlocked,
+        bu.NoCuenta,
+        u.Nombre,
+        u.area,
+        IFNULL(p.cargo, IFNULL(ad.cargo, \'\')) AS Cargo,
+        a.semestre,
+        a.grupo,
+        bu.motivo,
+        DATE(FROM_UNIXTIME(bu.FechaBloqueo )) as FechaBloqueo,
+        DATE(FROM_UNIXTIME(bu.FechaDesbloqueo)) as FechaDesbloqueo
+    FROM
+        blocked_user bu
+    LEFT JOIN
+        user u ON bu.NoCuenta = u.NoCuenta
+    LEFT JOIN
+        alumno a ON a.NoCuenta = u.NoCuenta
+    LEFT JOIN
+        profesor p ON p.NoCuenta = u.NoCuenta
+    LEFT JOIN
+        administrativo ad ON ad.NoCuenta = u.NoCuenta')
+ 3 APPPATH\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ListarBloqueos()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-21 17:25:45 --> mysqli_sql_exception: Table 'biblioteca.record_computo' doesn't exist in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT\r\n       ...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\r\n       ...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#3 C:\xampp\htdocs\Bib\app\Models\Monitoreo_Computo.php(15): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerMonitoreo_Computo.php(14): App\Models\Monitoreo_Computo->Listar()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo_Computo->index()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo_Computo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-21 17:25:45 --> Table 'biblioteca.record_computo' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Monitoreo_Computo.php(15): CodeIgniter\Database\BaseConnection->query('SELECT
+        u.NoCuenta,
+        u.Nombre AS nombre_completo,
+        u.area,
+        IFNULL(p.cargo, IFNULL(ad.cargo, \'\')) AS cargo,
+        a.semestre,
+        a.grupo,
+        r.asiento,
+        TIME(FROM_UNIXTIME(r.entrada, \'%H:%i:%s\' )) AS hora_entrada,
+        IF(r.salida = \'\', \'\',  TIME(FROM_UNIXTIME(r.salida, \'%H:%i:%s\'))) AS hora_salida
+    FROM record_computo r
+    LEFT JOIN alumno a ON a.NoCuenta = r.NoCuenta  
+    LEFT JOIN invitado i ON i.NoCuenta = r.NoCuenta
+    LEFT JOIN profesor p ON p.NoCuenta = r.NoCuenta
+    LEFT JOIN administrativo ad ON ad.NoCuenta = r.NoCuenta
+    LEFT JOIN user u ON u.NoCuenta = r.NoCuenta
+    WHERE r.Salida = \'\' 
+    ')
+ 2 APPPATH\Controllers\ControllerMonitoreo_Computo.php(14): App\Models\Monitoreo_Computo->Listar()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo_Computo->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo_Computo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-21 17:27:33 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAd...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAd...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAd...')
+#3 C:\xampp\htdocs\Bib\app\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAd...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdministrativo.php(55): App\Models\Administrativos->insertarAdministrativo(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-21 17:27:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAdministrativo(?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAdministrativo.php(55): App\Models\Administrativos->insertarAdministrativo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-21 17:27:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAd...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAd...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAd...')
+#3 C:\xampp\htdocs\Bib\app\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAd...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdministrativo.php(55): App\Models\Administrativos->insertarAdministrativo(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-21 17:27:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAdministrativo(?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAdministrativo.php(55): App\Models\Administrativos->insertarAdministrativo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-21 17:28:12 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAd...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAd...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAd...')
+#3 C:\xampp\htdocs\Bib\app\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAd...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdministrativo.php(55): App\Models\Administrativos->insertarAdministrativo(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-21 17:28:12 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAdministrativo(?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAdministrativo.php(55): App\Models\Administrativos->insertarAdministrativo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-21 17:29:47 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAd...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAd...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAd...')
+#3 C:\xampp\htdocs\Bib\app\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAd...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdministrativo.php(55): App\Models\Administrativos->insertarAdministrativo(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-21 17:29:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAdministrativo(?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAdministrativo.php(55): App\Models\Administrativos->insertarAdministrativo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-21 17:31:15 --> mysqli_sql_exception: Incorrect number of arguments for PROCEDURE biblioteca.InsertarAdministrativo; expected 5, got 4 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAd...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAd...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAd...')
+#3 C:\xampp\htdocs\Bib\app\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAd...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdministrativo.php(55): App\Models\Administrativos->insertarAdministrativo(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-21 17:31:15 --> Incorrect number of arguments for PROCEDURE biblioteca.InsertarAdministrativo; expected 5, got 4
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAdministrativo(?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAdministrativo.php(55): App\Models\Administrativos->insertarAdministrativo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-21 17:33:58 --> mysqli_sql_exception: Incorrect number of arguments for PROCEDURE biblioteca.InsertarAdministrativo; expected 5, got 4 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAd...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAd...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAd...')
+#3 C:\xampp\htdocs\Bib\app\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAd...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdministrativo.php(55): App\Models\Administrativos->insertarAdministrativo(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-21 17:33:58 --> Incorrect number of arguments for PROCEDURE biblioteca.InsertarAdministrativo; expected 5, got 4
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAdministrativo(?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAdministrativo.php(55): App\Models\Administrativos->insertarAdministrativo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-21 17:34:51 --> mysqli_sql_exception: Incorrect number of arguments for PROCEDURE biblioteca.InsertarAdministrativo; expected 5, got 4 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAd...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAd...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAd...')
+#3 C:\xampp\htdocs\Bib\app\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAd...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdministrativo.php(55): App\Models\Administrativos->insertarAdministrativo(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-21 17:34:51 --> Incorrect number of arguments for PROCEDURE biblioteca.InsertarAdministrativo; expected 5, got 4
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAdministrativo(?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAdministrativo.php(55): App\Models\Administrativos->insertarAdministrativo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-21 18:09:24 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarPr...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarPr...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarPr...')
+#3 C:\xampp\htdocs\Bib\app\Models\Profesores.php(38): CodeIgniter\Database\BaseConnection->query('CALL EliminarPr...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControladorProfesor.php(63): App\Models\Profesores->eliminarProfesor('740')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControladorProfesor->eliminar_profesor('740')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControladorProfesor))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-21 18:09:24 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Profesores.php(38): CodeIgniter\Database\BaseConnection->query('CALL EliminarProfesor(?)', [...])
+ 2 APPPATH\Controllers\ControladorProfesor.php(63): App\Models\Profesores->eliminarProfesor('740')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControladorProfesor->eliminar_profesor('740')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControladorProfesor))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-21 22:04:30 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'biblioteca', 3306, '', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(58): CodeIgniter\Database\BaseConnection->query('SELECT Asiento ...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(14): App\Models\Principal->ListarRecord()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->index()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Bib\app\Models\Principal.php(58): CodeIgniter\Database\BaseConnection->query('SELECT Asiento ...')
+#3 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(14): App\Models\Principal->ListarRecord()
+#4 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->index()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-02-21 22:04:30 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Principal.php(58): CodeIgniter\Database\BaseConnection->query('SELECT Asiento FROM record')
+ 3 APPPATH\Controllers\ControllerPrincipal.php(14): App\Models\Principal->ListarRecord()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

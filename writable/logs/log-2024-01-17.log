@@ -1,0 +1,1134 @@
+ERROR - 2024-01-17 02:56:02 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'biblioteca', 3306, '', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(24): CodeIgniter\Database\BaseConnection->query('SELECT u.NoCuen...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(14): App\Models\Alumno->ListarAlumnos()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->index()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Bib\app\Models\Alumno.php(24): CodeIgniter\Database\BaseConnection->query('SELECT u.NoCuen...')
+#3 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(14): App\Models\Alumno->ListarAlumnos()
+#4 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->index()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-17 02:56:02 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Alumno.php(24): CodeIgniter\Database\BaseConnection->query('SELECT u.NoCuenta, u.Nombre, u.area, a.semestre, a.grupo FROM user u INNER JOIN Alumno a ON u.NoCuenta = a.NoCuenta')
+ 3 APPPATH\Controllers\ControllerAlumno.php(14): App\Models\Alumno->ListarAlumnos()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 02:57:32 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAd...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAd...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAd...')
+#3 C:\xampp\htdocs\Bib\app\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAd...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdministrativo.php(56): App\Models\Administrativos->insertarAdministrativo(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 02:57:32 --> Duplicate entry '1' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAdministrativo(?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAdministrativo.php(56): App\Models\Administrativos->insertarAdministrativo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 02:57:33 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAd...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAd...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAd...')
+#3 C:\xampp\htdocs\Bib\app\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAd...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdministrativo.php(56): App\Models\Administrativos->insertarAdministrativo(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 02:57:33 --> Duplicate entry '1' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAdministrativo(?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAdministrativo.php(56): App\Models\Administrativos->insertarAdministrativo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 02:57:56 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 02:57:56 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 02:57:56 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 02:57:56 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 02:58:03 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 02:58:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 02:58:05 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 02:58:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 02:58:06 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 02:58:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 02:58:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 02:58:07 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 02:58:10 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 02:58:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 02:58:14 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 02:58:14 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 02:58:19 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL Actualizar...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL Actualizar...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL Actualizar...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(19): CodeIgniter\Database\BaseConnection->query('CALL Actualizar...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(89): App\Models\Invitado->actualizarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->actualizar_invitado()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 02:58:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(19): CodeIgniter\Database\BaseConnection->query('CALL ActualizarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(89): App\Models\Invitado->actualizarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->actualizar_invitado()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 02:58:20 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 02:58:20 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 02:58:21 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 02:58:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 02:58:25 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 02:58:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:00:43 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO use...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 C:\xampp\htdocs\Bib\app\Models\Admin.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdmin.php(39): App\Models\Admin->insertarAdmin(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdmin->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:00:43 --> Duplicate entry '1' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Admin.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO user(NoCuenta, Nombre, Contrasena, is_admin) VALUES (?,?,?,1)', [...])
+ 2 APPPATH\Controllers\ControllerAdmin.php(39): App\Models\Admin->insertarAdmin([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdmin->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:00:44 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO use...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 C:\xampp\htdocs\Bib\app\Models\Admin.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdmin.php(39): App\Models\Admin->insertarAdmin(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdmin->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:00:44 --> Duplicate entry '1' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Admin.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO user(NoCuenta, Nombre, Contrasena, is_admin) VALUES (?,?,?,1)', [...])
+ 2 APPPATH\Controllers\ControllerAdmin.php(39): App\Models\Admin->insertarAdmin([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdmin->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:08:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:08:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:08:32 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:08:32 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:08:33 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:08:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:08:33 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:08:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:09:20 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL Actualizar...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL Actualizar...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL Actualizar...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(19): CodeIgniter\Database\BaseConnection->query('CALL Actualizar...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(89): App\Models\Invitado->actualizarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->actualizar_invitado()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:09:20 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(19): CodeIgniter\Database\BaseConnection->query('CALL ActualizarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(89): App\Models\Invitado->actualizarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->actualizar_invitado()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:09:21 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:09:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:09:21 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:09:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:09:22 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:09:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:09:22 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:09:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:09:22 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:09:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:09:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:09:23 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:09:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:09:23 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:09:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:09:23 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:09:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:09:23 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:09:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:09:23 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:09:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:09:23 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:09:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:09:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:09:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:09:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:09:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:09:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:09:43 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:09:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:09:43 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:09:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:09:43 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:09:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:09:43 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:09:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:09:43 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:09:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:09:43 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:09:44 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:12:45 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:12:45 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:12:50 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:12:50 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:12:51 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:12:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:12:52 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:12:52 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:16:54 --> mysqli_sql_exception: Duplicate entry '2' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO use...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 C:\xampp\htdocs\Bib\app\Models\Admin.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdmin.php(39): App\Models\Admin->insertarAdmin(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdmin->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:16:54 --> Duplicate entry '2' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Admin.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO user(NoCuenta, Nombre, Contrasena, is_admin) VALUES (?,?,?,1)', [...])
+ 2 APPPATH\Controllers\ControllerAdmin.php(39): App\Models\Admin->insertarAdmin([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdmin->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:16:55 --> mysqli_sql_exception: Duplicate entry '2' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO use...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 C:\xampp\htdocs\Bib\app\Models\Admin.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdmin.php(39): App\Models\Admin->insertarAdmin(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdmin->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:16:55 --> Duplicate entry '2' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Admin.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO user(NoCuenta, Nombre, Contrasena, is_admin) VALUES (?,?,?,1)', [...])
+ 2 APPPATH\Controllers\ControllerAdmin.php(39): App\Models\Admin->insertarAdmin([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdmin->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:16:55 --> mysqli_sql_exception: Duplicate entry '2' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO use...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 C:\xampp\htdocs\Bib\app\Models\Admin.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdmin.php(39): App\Models\Admin->insertarAdmin(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdmin->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:16:55 --> Duplicate entry '2' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Admin.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO user(NoCuenta, Nombre, Contrasena, is_admin) VALUES (?,?,?,1)', [...])
+ 2 APPPATH\Controllers\ControllerAdmin.php(39): App\Models\Admin->insertarAdmin([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdmin->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:16:55 --> mysqli_sql_exception: Duplicate entry '2' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO use...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 C:\xampp\htdocs\Bib\app\Models\Admin.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdmin.php(39): App\Models\Admin->insertarAdmin(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdmin->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:16:55 --> Duplicate entry '2' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Admin.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO user(NoCuenta, Nombre, Contrasena, is_admin) VALUES (?,?,?,1)', [...])
+ 2 APPPATH\Controllers\ControllerAdmin.php(39): App\Models\Admin->insertarAdmin([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdmin->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:16:56 --> mysqli_sql_exception: Duplicate entry '2' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO use...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 C:\xampp\htdocs\Bib\app\Models\Admin.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdmin.php(39): App\Models\Admin->insertarAdmin(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdmin->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:16:56 --> Duplicate entry '2' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Admin.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO user(NoCuenta, Nombre, Contrasena, is_admin) VALUES (?,?,?,1)', [...])
+ 2 APPPATH\Controllers\ControllerAdmin.php(39): App\Models\Admin->insertarAdmin([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdmin->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:16:56 --> mysqli_sql_exception: Duplicate entry '2' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO use...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 C:\xampp\htdocs\Bib\app\Models\Admin.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdmin.php(39): App\Models\Admin->insertarAdmin(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdmin->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:16:56 --> Duplicate entry '2' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Admin.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO user(NoCuenta, Nombre, Contrasena, is_admin) VALUES (?,?,?,1)', [...])
+ 2 APPPATH\Controllers\ControllerAdmin.php(39): App\Models\Admin->insertarAdmin([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdmin->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:16:56 --> mysqli_sql_exception: Duplicate entry '2' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO use...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 C:\xampp\htdocs\Bib\app\Models\Admin.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdmin.php(39): App\Models\Admin->insertarAdmin(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdmin->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:16:56 --> Duplicate entry '2' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Admin.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO user(NoCuenta, Nombre, Contrasena, is_admin) VALUES (?,?,?,1)', [...])
+ 2 APPPATH\Controllers\ControllerAdmin.php(39): App\Models\Admin->insertarAdmin([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdmin->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:16:56 --> mysqli_sql_exception: Duplicate entry '2' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO use...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 C:\xampp\htdocs\Bib\app\Models\Admin.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdmin.php(39): App\Models\Admin->insertarAdmin(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdmin->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:16:56 --> Duplicate entry '2' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Admin.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO user(NoCuenta, Nombre, Contrasena, is_admin) VALUES (?,?,?,1)', [...])
+ 2 APPPATH\Controllers\ControllerAdmin.php(39): App\Models\Admin->insertarAdmin([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdmin->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 03:16:56 --> mysqli_sql_exception: Duplicate entry '2' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO use...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 C:\xampp\htdocs\Bib\app\Models\Admin.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdmin.php(39): App\Models\Admin->insertarAdmin(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdmin->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 03:16:56 --> Duplicate entry '2' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Admin.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO user(NoCuenta, Nombre, Contrasena, is_admin) VALUES (?,?,?,1)', [...])
+ 2 APPPATH\Controllers\ControllerAdmin.php(39): App\Models\Admin->insertarAdmin([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdmin->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-17 05:17:36 --> mysqli_sql_exception: Duplicate entry '2' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(44): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 05:17:36 --> Duplicate entry '2' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(44): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

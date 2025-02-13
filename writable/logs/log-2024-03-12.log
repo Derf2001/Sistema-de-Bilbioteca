@@ -1,0 +1,358 @@
+ERROR - 2024-03-12 21:21:01 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'biblioteca', 3306, '', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Bib\app\Models\Monitoreo.php(68): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerMonitoreo.php(58): App\Models\Monitoreo->ObtenerAsientos_hilo()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->ObtenerAsientos_hilo()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Bib\app\Models\Monitoreo.php(68): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\Bib\app\Controllers\ControllerMonitoreo.php(58): App\Models\Monitoreo->ObtenerAsientos_hilo()
+#4 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->ObtenerAsientos_hilo()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-12 21:21:01 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Monitoreo.php(68): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) as size FROM asientos')
+ 3 APPPATH\Controllers\ControllerMonitoreo.php(58): App\Models\Monitoreo->ObtenerAsientos_hilo()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->ObtenerAsientos_hilo()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-12 21:21:28 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'biblioteca', 3306, '', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Bib\app\Models\Monitoreo.php(68): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerMonitoreo.php(58): App\Models\Monitoreo->ObtenerAsientos_hilo()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->ObtenerAsientos_hilo()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Bib\app\Models\Monitoreo.php(68): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\Bib\app\Controllers\ControllerMonitoreo.php(58): App\Models\Monitoreo->ObtenerAsientos_hilo()
+#4 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->ObtenerAsientos_hilo()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-12 21:21:28 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Monitoreo.php(68): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) as size FROM asientos')
+ 3 APPPATH\Controllers\ControllerMonitoreo.php(58): App\Models\Monitoreo->ObtenerAsientos_hilo()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->ObtenerAsientos_hilo()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-12 21:21:29 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'biblioteca', 3306, '', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Bib\app\Models\Monitoreo.php(68): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerMonitoreo.php(58): App\Models\Monitoreo->ObtenerAsientos_hilo()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->ObtenerAsientos_hilo()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Bib\app\Models\Monitoreo.php(68): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\Bib\app\Controllers\ControllerMonitoreo.php(58): App\Models\Monitoreo->ObtenerAsientos_hilo()
+#4 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->ObtenerAsientos_hilo()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-12 21:21:29 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Monitoreo.php(68): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) as size FROM asientos')
+ 3 APPPATH\Controllers\ControllerMonitoreo.php(58): App\Models\Monitoreo->ObtenerAsientos_hilo()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->ObtenerAsientos_hilo()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-12 21:21:30 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'biblioteca', 3306, '', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Bib\app\Models\Monitoreo.php(68): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerMonitoreo.php(58): App\Models\Monitoreo->ObtenerAsientos_hilo()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->ObtenerAsientos_hilo()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Bib\app\Models\Monitoreo.php(68): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\Bib\app\Controllers\ControllerMonitoreo.php(58): App\Models\Monitoreo->ObtenerAsientos_hilo()
+#4 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->ObtenerAsientos_hilo()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-12 21:21:30 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Monitoreo.php(68): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) as size FROM asientos')
+ 3 APPPATH\Controllers\ControllerMonitoreo.php(58): App\Models\Monitoreo->ObtenerAsientos_hilo()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->ObtenerAsientos_hilo()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-12 21:21:31 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'biblioteca', 3306, '', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Bib\app\Models\Monitoreo.php(68): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerMonitoreo.php(58): App\Models\Monitoreo->ObtenerAsientos_hilo()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->ObtenerAsientos_hilo()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Bib\app\Models\Monitoreo.php(68): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\Bib\app\Controllers\ControllerMonitoreo.php(58): App\Models\Monitoreo->ObtenerAsientos_hilo()
+#4 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->ObtenerAsientos_hilo()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-12 21:21:31 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Monitoreo.php(68): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) as size FROM asientos')
+ 3 APPPATH\Controllers\ControllerMonitoreo.php(58): App\Models\Monitoreo->ObtenerAsientos_hilo()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->ObtenerAsientos_hilo()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-12 21:21:32 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'biblioteca', 3306, '', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Bib\app\Models\Monitoreo.php(68): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerMonitoreo.php(58): App\Models\Monitoreo->ObtenerAsientos_hilo()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->ObtenerAsientos_hilo()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Bib\app\Models\Monitoreo.php(68): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\Bib\app\Controllers\ControllerMonitoreo.php(58): App\Models\Monitoreo->ObtenerAsientos_hilo()
+#4 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->ObtenerAsientos_hilo()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-12 21:21:32 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Monitoreo.php(68): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) as size FROM asientos')
+ 3 APPPATH\Controllers\ControllerMonitoreo.php(58): App\Models\Monitoreo->ObtenerAsientos_hilo()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->ObtenerAsientos_hilo()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-12 21:21:33 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'biblioteca', 3306, '', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Bib\app\Models\Monitoreo.php(68): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerMonitoreo.php(58): App\Models\Monitoreo->ObtenerAsientos_hilo()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->ObtenerAsientos_hilo()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Bib\app\Models\Monitoreo.php(68): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\Bib\app\Controllers\ControllerMonitoreo.php(58): App\Models\Monitoreo->ObtenerAsientos_hilo()
+#4 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->ObtenerAsientos_hilo()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-12 21:21:33 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Monitoreo.php(68): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) as size FROM asientos')
+ 3 APPPATH\Controllers\ControllerMonitoreo.php(58): App\Models\Monitoreo->ObtenerAsientos_hilo()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->ObtenerAsientos_hilo()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-12 21:21:34 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'biblioteca', 3306, '', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Bib\app\Models\Monitoreo.php(68): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerMonitoreo.php(58): App\Models\Monitoreo->ObtenerAsientos_hilo()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->ObtenerAsientos_hilo()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Bib\app\Models\Monitoreo.php(68): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\Bib\app\Controllers\ControllerMonitoreo.php(58): App\Models\Monitoreo->ObtenerAsientos_hilo()
+#4 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->ObtenerAsientos_hilo()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-12 21:21:34 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Monitoreo.php(68): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) as size FROM asientos')
+ 3 APPPATH\Controllers\ControllerMonitoreo.php(58): App\Models\Monitoreo->ObtenerAsientos_hilo()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->ObtenerAsientos_hilo()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-12 21:21:35 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'biblioteca', 3306, '', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Bib\app\Models\Monitoreo.php(68): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerMonitoreo.php(58): App\Models\Monitoreo->ObtenerAsientos_hilo()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->ObtenerAsientos_hilo()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Bib\app\Models\Monitoreo.php(68): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\Bib\app\Controllers\ControllerMonitoreo.php(58): App\Models\Monitoreo->ObtenerAsientos_hilo()
+#4 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->ObtenerAsientos_hilo()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-12 21:21:35 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Monitoreo.php(68): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) as size FROM asientos')
+ 3 APPPATH\Controllers\ControllerMonitoreo.php(58): App\Models\Monitoreo->ObtenerAsientos_hilo()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->ObtenerAsientos_hilo()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-12 21:21:35 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'biblioteca', 3306, '', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Bib\app\Models\Monitoreo_Computo.php(15): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerMonitoreo_Computo.php(15): App\Models\Monitoreo_Computo->Listar()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo_Computo->index()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo_Computo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Bib\app\Models\Monitoreo_Computo.php(15): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#3 C:\xampp\htdocs\Bib\app\Controllers\ControllerMonitoreo_Computo.php(15): App\Models\Monitoreo_Computo->Listar()
+#4 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo_Computo->index()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo_Computo))
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-12 21:21:35 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Monitoreo_Computo.php(15): CodeIgniter\Database\BaseConnection->query('SELECT
+        u.NoCuenta,
+        IFNULL(u.Nombre,\'\') AS nombre_completo,
+        IFNULL(u.area, \'\') AS area,
+        IFNULL(p.cargo, IFNULL(ad.cargo, \'\')) AS cargo,
+        IFNULL(a.semestre,\'\') AS semestre,
+        IFNULL(a.grupo,\'\') AS grupo,
+        IFNULL(r.asiento,\'\') AS asiento,
+        DATE_FORMAT(FROM_UNIXTIME(r.entrada), \'%d-%m-%Y\') AS fecha ,
+        TIME(FROM_UNIXTIME(r.entrada, \'%H:%i:%s\' )) AS hora_entrada,
+        IF(r.salida = \'\', \'\',  TIME(FROM_UNIXTIME(r.salida, \'%H:%i:%s\'))) AS hora_salida
+    FROM record_computo r
+    LEFT JOIN alumno a ON a.NoCuenta = r.NoCuenta  
+    LEFT JOIN invitado i ON i.NoCuenta = r.NoCuenta
+    LEFT JOIN profesor p ON p.NoCuenta = r.NoCuenta
+    LEFT JOIN administrativo ad ON ad.NoCuenta = r.NoCuenta
+    LEFT JOIN user u ON u.NoCuenta = r.NoCuenta
+    WHERE r.Salida = \'\' 
+    ')
+ 3 APPPATH\Controllers\ControllerMonitoreo_Computo.php(15): App\Models\Monitoreo_Computo->Listar()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo_Computo->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo_Computo))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

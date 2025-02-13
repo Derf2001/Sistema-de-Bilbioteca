@@ -1,0 +1,53 @@
+CRITICAL - 2023-12-01 03:32:01 --> Undefined variable $prueba
+in APPPATH\Views\layouts\layout.php on line 4.
+ 1 APPPATH\Views\layouts\layout.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $prueba', 'C:\\xampp\\htdocs\\Bib\\app\\Views\\layouts\\layout.php', 4)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Bib\\app\\Views\\layouts\\layout.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layouts/layout', [], true)
+ 5 APPPATH\Controllers\ControladprProfesor.php(20): view('layouts/layout', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControladprProfesor->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControladprProfesor))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-01 03:32:12 --> Undefined variable $prueba
+in APPPATH\Views\layouts\layout.php on line 4.
+ 1 APPPATH\Views\layouts\layout.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $prueba', 'C:\\xampp\\htdocs\\Bib\\app\\Views\\layouts\\layout.php', 4)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Bib\\app\\Views\\layouts\\layout.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layouts/layout', [], true)
+ 5 APPPATH\Controllers\ControladprProfesor.php(20): view('layouts/layout', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControladprProfesor->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControladprProfesor))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-01 03:40:40 --> Array to string conversion
+in APPPATH\Views\layouts\layout.php on line 16.
+ 1 APPPATH\Views\layouts\layout.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\Bib\\app\\Views\\layouts\\layout.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Bib\\app\\Views\\layouts\\layout.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layouts/layout', [], true)
+ 5 APPPATH\Controllers\ControladprProfesor.php(20): view('layouts/layout', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControladprProfesor->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControladprProfesor))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-01 03:47:08 --> Undefined variable $result
+in APPPATH\Views\CrudProfesor.php on line 32.
+ 1 APPPATH\Views\CrudProfesor.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\Bib\\app\\Views\\CrudProfesor.php', 32)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Bib\\app\\Views\\CrudProfesor.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('CrudProfesor', [], true)
+ 5 APPPATH\Controllers\ControladprProfesor.php(22): view('CrudProfesor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControladprProfesor->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControladprProfesor))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-01 03:57:53 --> Invalid file: "layouts/layout-js.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/layout-js.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layouts/layout-js', [], true)
+ 3 APPPATH\Controllers\ControladprProfesor.php(21): view('layouts/layout-js')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControladprProfesor->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControladprProfesor))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

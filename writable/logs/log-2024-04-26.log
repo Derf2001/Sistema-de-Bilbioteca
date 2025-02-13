@@ -1,0 +1,168 @@
+ERROR - 2024-04-26 14:10:42 --> mysqli_sql_exception: ocupado,D16 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO asi...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO asi...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO asi...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(110): CodeIgniter\Database\BaseConnection->query('INSERT INTO asi...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(189): App\Models\Principal->ValidarAll(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->ValidarAll('0321150001', 'D16')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-04-26 14:19:56 --> mysqli_sql_exception: ocupado,E11 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO asi...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO asi...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO asi...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(110): CodeIgniter\Database\BaseConnection->query('INSERT INTO asi...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(189): App\Models\Principal->ValidarAll(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->ValidarAll('0320140005', 'E11')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-04-26 14:20:11 --> mysqli_sql_exception: ocupado,E11 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO asi...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO asi...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO asi...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(110): CodeIgniter\Database\BaseConnection->query('INSERT INTO asi...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(189): App\Models\Principal->ValidarAll(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->ValidarAll('0320140005', 'E10')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-04-26 14:20:23 --> mysqli_sql_exception: ocupado,E11 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO asi...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO asi...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO asi...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(110): CodeIgniter\Database\BaseConnection->query('INSERT INTO asi...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(189): App\Models\Principal->ValidarAll(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->ValidarAll('0320140005', 'E10')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-04-26 14:20:39 --> mysqli_sql_exception: ocupado,E11 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO asi...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO asi...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO asi...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(110): CodeIgniter\Database\BaseConnection->query('INSERT INTO asi...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(189): App\Models\Principal->ValidarAll(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->ValidarAll('0320140005', 'E8')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-04-26 15:36:44 --> mysqli_sql_exception: ocupado,C20 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO asi...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO asi...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO asi...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(110): CodeIgniter\Database\BaseConnection->query('INSERT INTO asi...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(189): App\Models\Principal->ValidarAll(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->ValidarAll('0320150001', 'C20')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-04-26 17:07:20 --> mysqli_sql_exception: ocupado,E16 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO asi...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO asi...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO asi...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(110): CodeIgniter\Database\BaseConnection->query('INSERT INTO asi...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(189): App\Models\Principal->ValidarAll(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->ValidarAll('0322150014', 'E16')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-04-26 17:07:31 --> mysqli_sql_exception: ocupado,E16 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO asi...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO asi...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO asi...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(110): CodeIgniter\Database\BaseConnection->query('INSERT INTO asi...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(189): App\Models\Principal->ValidarAll(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->ValidarAll('0322150014', 'E16')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-04-26 17:36:55 --> mysqli_sql_exception: ocupado,E16 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO asi...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO asi...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO asi...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(110): CodeIgniter\Database\BaseConnection->query('INSERT INTO asi...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(189): App\Models\Principal->ValidarAll(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->ValidarAll('0320140041', 'A7')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-04-26 17:37:58 --> mysqli_sql_exception: bloqueado, in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO asi...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO asi...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO asi...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(110): CodeIgniter\Database\BaseConnection->query('INSERT INTO asi...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(189): App\Models\Principal->ValidarAll(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->ValidarAll('0321150011', 'B6')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-04-26 17:39:04 --> mysqli_sql_exception: bloqueado, in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO asi...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO asi...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO asi...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(110): CodeIgniter\Database\BaseConnection->query('INSERT INTO asi...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(189): App\Models\Principal->ValidarAll(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->ValidarAll('0321150011', 'B11')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-04-26 17:40:50 --> mysqli_sql_exception: bloqueado, in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO asi...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO asi...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO asi...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(110): CodeIgniter\Database\BaseConnection->query('INSERT INTO asi...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(189): App\Models\Principal->ValidarAll(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->ValidarAll('0321140020', 'A6')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-04-26 17:44:04 --> mysqli_sql_exception: bloqueado, in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO asi...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO asi...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO asi...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(110): CodeIgniter\Database\BaseConnection->query('INSERT INTO asi...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(189): App\Models\Principal->ValidarAll(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->ValidarAll('0321140020', 'A2')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-04-26 17:55:58 --> mysqli_sql_exception: ocupado,B5 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO asi...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO asi...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO asi...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(110): CodeIgniter\Database\BaseConnection->query('INSERT INTO asi...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(189): App\Models\Principal->ValidarAll(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->ValidarAll('0321150011', 'B5')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}

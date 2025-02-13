@@ -1,0 +1,427 @@
+CRITICAL - 2024-02-13 19:35:27 --> Undefined variable $resultadoConsulta
+in APPPATH\Controllers\Busquedas.php on line 87.
+ 1 APPPATH\Controllers\Busquedas.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultadoConsulta', 'C:\\xampp\\htdocs\\Bib\\app\\Controllers\\Busquedas.php', 87)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Busquedas->buscarRegistros()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Busquedas))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-13 21:02:51 --> mysqli_sql_exception: Duplicate entry '1000000015' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarPr...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarPr...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarPr...')
+#3 C:\xampp\htdocs\Bib\app\Models\Profesores.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarPr...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControladorProfesor.php(90): App\Models\Profesores->insertarProfesor(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControladorProfesor->addProfesor()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControladorProfesor))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-13 21:02:51 --> Duplicate entry '1000000015' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Profesores.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarProfesor(?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControladorProfesor.php(90): App\Models\Profesores->insertarProfesor([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControladorProfesor->addProfesor()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControladorProfesor))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-13 23:04:03 --> mysqli_sql_exception: Duplicate entry '740' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarPr...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarPr...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarPr...')
+#3 C:\xampp\htdocs\Bib\app\Models\Profesores.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarPr...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControladorProfesor.php(90): App\Models\Profesores->insertarProfesor(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControladorProfesor->addProfesor()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControladorProfesor))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-13 23:04:03 --> Duplicate entry '740' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Profesores.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarProfesor(?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControladorProfesor.php(90): App\Models\Profesores->insertarProfesor([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControladorProfesor->addProfesor()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControladorProfesor))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-13 23:08:58 --> mysqli_sql_exception: Duplicate entry 'I-0017' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-13 23:08:58 --> Duplicate entry 'I-0017' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-13 23:09:01 --> mysqli_sql_exception: Duplicate entry 'I-0017' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-13 23:09:01 --> Duplicate entry 'I-0017' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-13 23:09:06 --> mysqli_sql_exception: Duplicate entry 'I-0017' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-13 23:09:06 --> Duplicate entry 'I-0017' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-13 23:09:14 --> mysqli_sql_exception: Duplicate entry 'I-0017' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-13 23:09:14 --> Duplicate entry 'I-0017' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-13 23:09:17 --> mysqli_sql_exception: Duplicate entry 'I-0017' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-13 23:09:17 --> Duplicate entry 'I-0017' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-13 23:09:26 --> mysqli_sql_exception: Duplicate entry 'I-0017' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-13 23:09:26 --> Duplicate entry 'I-0017' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-13 23:09:38 --> mysqli_sql_exception: Duplicate entry 'I-0017' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-13 23:09:38 --> Duplicate entry 'I-0017' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-13 23:10:04 --> mysqli_sql_exception: Duplicate entry 'I-0017' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-13 23:10:04 --> Duplicate entry 'I-0017' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-13 23:10:05 --> mysqli_sql_exception: Duplicate entry 'I-0017' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-13 23:10:05 --> Duplicate entry 'I-0017' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-13 23:10:05 --> mysqli_sql_exception: Duplicate entry 'I-0017' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-13 23:10:05 --> Duplicate entry 'I-0017' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-13 23:12:14 --> mysqli_sql_exception: Unknown column ' p_NoCuenta' in 'where clause' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(27): CodeIgniter\Database\BaseConnection->query('CALL EliminarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(62): App\Models\Invitado->eliminarInvitado('I-0003')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->eliminar_invitado('I-0003')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-02-13 23:12:14 --> mysqli_sql_exception: Unknown column ' p_NoCuenta' in 'where clause' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(27): CodeIgniter\Database\BaseConnection->query('CALL EliminarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(62): App\Models\Invitado->eliminarInvitado('I-0004')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->eliminar_invitado('I-0004')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-13 23:12:14 --> Unknown column ' p_NoCuenta' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(27): CodeIgniter\Database\BaseConnection->query('CALL EliminarInvitado(?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(62): App\Models\Invitado->eliminarInvitado('I-0003')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->eliminar_invitado('I-0003')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-13 23:12:14 --> Unknown column ' p_NoCuenta' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(27): CodeIgniter\Database\BaseConnection->query('CALL EliminarInvitado(?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(62): App\Models\Invitado->eliminarInvitado('I-0004')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->eliminar_invitado('I-0004')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-13 23:12:21 --> mysqli_sql_exception: Unknown column ' p_NoCuenta' in 'where clause' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(27): CodeIgniter\Database\BaseConnection->query('CALL EliminarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(62): App\Models\Invitado->eliminarInvitado('I-0004')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->eliminar_invitado('I-0004')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-13 23:12:21 --> Unknown column ' p_NoCuenta' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(27): CodeIgniter\Database\BaseConnection->query('CALL EliminarInvitado(?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(62): App\Models\Invitado->eliminarInvitado('I-0004')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->eliminar_invitado('I-0004')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-13 23:12:21 --> mysqli_sql_exception: Unknown column ' p_NoCuenta' in 'where clause' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(27): CodeIgniter\Database\BaseConnection->query('CALL EliminarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(62): App\Models\Invitado->eliminarInvitado('I-0003')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->eliminar_invitado('I-0003')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-13 23:12:21 --> Unknown column ' p_NoCuenta' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(27): CodeIgniter\Database\BaseConnection->query('CALL EliminarInvitado(?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(62): App\Models\Invitado->eliminarInvitado('I-0003')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->eliminar_invitado('I-0003')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-13 23:12:21 --> mysqli_sql_exception: Unknown column ' p_NoCuenta' in 'where clause' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(27): CodeIgniter\Database\BaseConnection->query('CALL EliminarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(62): App\Models\Invitado->eliminarInvitado('0000000001')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->eliminar_invitado('0000000001')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-13 23:12:21 --> Unknown column ' p_NoCuenta' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(27): CodeIgniter\Database\BaseConnection->query('CALL EliminarInvitado(?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(62): App\Models\Invitado->eliminarInvitado('0000000001')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->eliminar_invitado('0000000001')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-13 23:12:38 --> mysqli_sql_exception: Unknown column ' p_NoCuenta' in 'where clause' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(27): CodeIgniter\Database\BaseConnection->query('CALL EliminarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(62): App\Models\Invitado->eliminarInvitado('0000000001')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->eliminar_invitado('0000000001')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-02-13 23:12:38 --> mysqli_sql_exception: Unknown column ' p_NoCuenta' in 'where clause' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(27): CodeIgniter\Database\BaseConnection->query('CALL EliminarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(62): App\Models\Invitado->eliminarInvitado('I-0004')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->eliminar_invitado('I-0004')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-02-13 23:12:38 --> mysqli_sql_exception: Unknown column ' p_NoCuenta' in 'where clause' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(27): CodeIgniter\Database\BaseConnection->query('CALL EliminarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(62): App\Models\Invitado->eliminarInvitado('I-0003')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->eliminar_invitado('I-0003')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-13 23:12:38 --> Unknown column ' p_NoCuenta' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(27): CodeIgniter\Database\BaseConnection->query('CALL EliminarInvitado(?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(62): App\Models\Invitado->eliminarInvitado('0000000001')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->eliminar_invitado('0000000001')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-13 23:12:38 --> Unknown column ' p_NoCuenta' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(27): CodeIgniter\Database\BaseConnection->query('CALL EliminarInvitado(?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(62): App\Models\Invitado->eliminarInvitado('I-0004')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->eliminar_invitado('I-0004')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-13 23:12:38 --> Unknown column ' p_NoCuenta' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(27): CodeIgniter\Database\BaseConnection->query('CALL EliminarInvitado(?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(62): App\Models\Invitado->eliminarInvitado('I-0003')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->eliminar_invitado('I-0003')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-13 23:12:38 --> mysqli_sql_exception: Unknown column ' p_NoCuenta' in 'where clause' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(27): CodeIgniter\Database\BaseConnection->query('CALL EliminarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(62): App\Models\Invitado->eliminarInvitado('I-0004')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->eliminar_invitado('I-0004')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-13 23:12:38 --> Unknown column ' p_NoCuenta' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(27): CodeIgniter\Database\BaseConnection->query('CALL EliminarInvitado(?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(62): App\Models\Invitado->eliminarInvitado('I-0004')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->eliminar_invitado('I-0004')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

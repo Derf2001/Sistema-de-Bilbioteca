@@ -1,0 +1,20 @@
+ERROR - 2024-01-21 23:58:29 --> mysqli_sql_exception: Duplicate entry '2123qwq23123q12' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-21 23:58:29 --> Duplicate entry '2123qwq23123q12' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(46): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

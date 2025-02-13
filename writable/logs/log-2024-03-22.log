@@ -1,0 +1,20 @@
+ERROR - 2024-03-22 18:42:32 --> mysqli_sql_exception: Duplicate entry '3000' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAd...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAd...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAd...')
+#3 C:\xampp\htdocs\Bib\app\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAd...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdministrativo.php(55): App\Models\Administrativos->insertarAdministrativo(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-22 18:42:32 --> Duplicate entry '3000' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAdministrativo(?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAdministrativo.php(55): App\Models\Administrativos->insertarAdministrativo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

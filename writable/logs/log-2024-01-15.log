@@ -1,0 +1,1037 @@
+ERROR - 2024-01-15 08:00:02 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\Bibli\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\Bibli\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '1234', 'biblioteca', 3306, '', 0)
+#1 C:\xampp\htdocs\Bibli\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Bibli\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Bibli\app\Models\Administrativos.php(25): CodeIgniter\Database\BaseConnection->query('SELECT a.NoCuen...')
+#4 C:\xampp\htdocs\Bibli\app\Controllers\ControllerAdministrativo.php(16): App\Models\Administrativos->ListarAdministrativos()
+#5 C:\xampp\htdocs\Bibli\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->index()
+#6 C:\xampp\htdocs\Bibli\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#7 C:\xampp\htdocs\Bibli\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bibli\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\Bibli\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Bibli\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Bibli\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Bibli\app\Models\Administrativos.php(25): CodeIgniter\Database\BaseConnection->query('SELECT a.NoCuen...')
+#3 C:\xampp\htdocs\Bibli\app\Controllers\ControllerAdministrativo.php(16): App\Models\Administrativos->ListarAdministrativos()
+#4 C:\xampp\htdocs\Bibli\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->index()
+#5 C:\xampp\htdocs\Bibli\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#6 C:\xampp\htdocs\Bibli\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Bibli\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-15 08:00:02 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Administrativos.php(25): CodeIgniter\Database\BaseConnection->query('SELECT a.NoCuenta, u.Nombre, u.area, a.cargo FROM administrativo a JOIN user u ON a.NoCuenta = u.NoCuenta')
+ 3 APPPATH\Controllers\ControllerAdministrativo.php(16): App\Models\Administrativos->ListarAdministrativos()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 08:03:48 --> mysqli_sql_exception: Incorrect number of arguments for PROCEDURE biblioteca.InsertarAdministrativo; expected 5, got 7 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAd...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAd...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAd...')
+#3 C:\xampp\htdocs\Bib\app\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAd...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdministrativo.php(45): App\Models\Administrativos->insertarAdministrativo(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 08:03:48 --> Incorrect number of arguments for PROCEDURE biblioteca.InsertarAdministrativo; expected 5, got 7
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAdministrativo(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAdministrativo.php(45): App\Models\Administrativos->insertarAdministrativo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 08:03:49 --> mysqli_sql_exception: Incorrect number of arguments for PROCEDURE biblioteca.InsertarAdministrativo; expected 5, got 7 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAd...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAd...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAd...')
+#3 C:\xampp\htdocs\Bib\app\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAd...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdministrativo.php(45): App\Models\Administrativos->insertarAdministrativo(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 08:03:49 --> Incorrect number of arguments for PROCEDURE biblioteca.InsertarAdministrativo; expected 5, got 7
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAdministrativo(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAdministrativo.php(45): App\Models\Administrativos->insertarAdministrativo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 08:03:50 --> mysqli_sql_exception: Incorrect number of arguments for PROCEDURE biblioteca.InsertarAdministrativo; expected 5, got 7 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAd...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAd...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAd...')
+#3 C:\xampp\htdocs\Bib\app\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAd...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdministrativo.php(45): App\Models\Administrativos->insertarAdministrativo(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 08:03:50 --> Incorrect number of arguments for PROCEDURE biblioteca.InsertarAdministrativo; expected 5, got 7
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAdministrativo(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAdministrativo.php(45): App\Models\Administrativos->insertarAdministrativo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 08:48:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAd...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAd...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAd...')
+#3 C:\xampp\htdocs\Bib\app\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAd...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdministrativo.php(43): App\Models\Administrativos->insertarAdministrativo(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 08:48:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAdministrativo(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAdministrativo.php(43): App\Models\Administrativos->insertarAdministrativo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 08:48:30 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAd...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAd...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAd...')
+#3 C:\xampp\htdocs\Bib\app\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAd...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdministrativo.php(43): App\Models\Administrativos->insertarAdministrativo(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 08:48:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAdministrativo(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAdministrativo.php(43): App\Models\Administrativos->insertarAdministrativo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 08:48:30 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAd...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAd...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAd...')
+#3 C:\xampp\htdocs\Bib\app\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAd...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdministrativo.php(43): App\Models\Administrativos->insertarAdministrativo(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 08:48:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAdministrativo(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAdministrativo.php(43): App\Models\Administrativos->insertarAdministrativo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 08:48:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAd...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAd...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAd...')
+#3 C:\xampp\htdocs\Bib\app\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAd...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdministrativo.php(43): App\Models\Administrativos->insertarAdministrativo(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 08:48:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAdministrativo(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAdministrativo.php(43): App\Models\Administrativos->insertarAdministrativo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 08:48:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAd...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAd...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAd...')
+#3 C:\xampp\htdocs\Bib\app\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAd...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdministrativo.php(43): App\Models\Administrativos->insertarAdministrativo(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 08:48:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAdministrativo(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAdministrativo.php(43): App\Models\Administrativos->insertarAdministrativo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 08:48:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAd...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAd...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAd...')
+#3 C:\xampp\htdocs\Bib\app\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAd...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdministrativo.php(43): App\Models\Administrativos->insertarAdministrativo(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 08:48:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAdministrativo(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAdministrativo.php(43): App\Models\Administrativos->insertarAdministrativo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 08:48:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAd...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAd...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAd...')
+#3 C:\xampp\htdocs\Bib\app\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAd...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdministrativo.php(43): App\Models\Administrativos->insertarAdministrativo(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 08:48:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAdministrativo(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAdministrativo.php(43): App\Models\Administrativos->insertarAdministrativo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 08:48:32 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAd...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAd...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAd...')
+#3 C:\xampp\htdocs\Bib\app\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAd...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdministrativo.php(43): App\Models\Administrativos->insertarAdministrativo(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 08:48:32 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAdministrativo(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAdministrativo.php(43): App\Models\Administrativos->insertarAdministrativo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 08:48:32 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAd...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAd...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAd...')
+#3 C:\xampp\htdocs\Bib\app\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAd...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdministrativo.php(43): App\Models\Administrativos->insertarAdministrativo(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 08:48:32 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAdministrativo(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAdministrativo.php(43): App\Models\Administrativos->insertarAdministrativo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 08:50:53 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`alumno`, CONSTRAINT `alumno_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM use...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM use...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM use...')
+#3 C:\xampp\htdocs\Bib\app\Models\Admin.php(27): CodeIgniter\Database\BaseConnection->query('DELETE FROM use...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdmin.php(59): App\Models\Admin->eliminarAdmin('4545')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdmin->eliminar_admin('4545')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 08:50:53 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`alumno`, CONSTRAINT `alumno_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Admin.php(27): CodeIgniter\Database\BaseConnection->query('DELETE FROM user WHERE NoCuenta = ?', [...])
+ 2 APPPATH\Controllers\ControllerAdmin.php(59): App\Models\Admin->eliminarAdmin('4545')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdmin->eliminar_admin('4545')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 08:51:31 --> mysqli_sql_exception: Duplicate entry '7896767' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(44): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 08:51:31 --> Duplicate entry '7896767' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(44): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 10:50:18 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`alumno`, CONSTRAINT `alumno_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM use...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM use...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM use...')
+#3 C:\xampp\htdocs\Bib\app\Models\Admin.php(27): CodeIgniter\Database\BaseConnection->query('DELETE FROM use...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdmin.php(59): App\Models\Admin->eliminarAdmin('895623')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdmin->eliminar_admin('895623')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 10:50:18 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`alumno`, CONSTRAINT `alumno_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Admin.php(27): CodeIgniter\Database\BaseConnection->query('DELETE FROM user WHERE NoCuenta = ?', [...])
+ 2 APPPATH\Controllers\ControllerAdmin.php(59): App\Models\Admin->eliminarAdmin('895623')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdmin->eliminar_admin('895623')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 11:04:36 --> mysqli_sql_exception: Unknown column 'Motivo' in 'field list' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT NoCuenta...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT NoCuenta...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT NoCuenta...')
+#3 C:\xampp\htdocs\Bib\app\Models\Bloqueos.php(20): CodeIgniter\Database\BaseConnection->query('SELECT NoCuenta...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ConsultarTodosLosBloqueos()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 11:04:36 --> Unknown column 'Motivo' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Bloqueos.php(20): CodeIgniter\Database\BaseConnection->query('SELECT NoCuenta, Nombre, Area, Semestre, Grupo, Motivo, FechaBloqueo, FechaDesbloqueo FROM blocked_user')
+ 2 APPPATH\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ConsultarTodosLosBloqueos()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 11:49:31 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(44): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 11:49:31 --> Duplicate entry '1' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(44): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 11:49:33 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(44): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 11:49:33 --> Duplicate entry '1' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(44): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 11:49:33 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(44): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 11:49:33 --> Duplicate entry '1' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(44): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 15:29:20 --> Array to string conversion
+in APPPATH\Views\administrativo.php on line 29.
+ 1 APPPATH\Views\administrativo.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\Bib\\app\\Views\\administrativo.php', 29)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Bib\\app\\Views\\administrativo.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('administrativo', [], true)
+ 5 APPPATH\Controllers\ControllerAdministrativo.php(23): view('administrativo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 15:30:26 --> Array to string conversion
+in APPPATH\Views\administrativo.php on line 29.
+ 1 APPPATH\Views\administrativo.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\Bib\\app\\Views\\administrativo.php', 29)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Bib\\app\\Views\\administrativo.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('administrativo', [], true)
+ 5 APPPATH\Controllers\ControllerAdministrativo.php(23): view('administrativo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 15:44:17 --> Undefined variable $datos
+in APPPATH\Controllers\ControllerAdministrativo.php on line 35.
+ 1 APPPATH\Controllers\ControllerAdministrativo.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'C:\\xampp\\htdocs\\Bib\\app\\Controllers\\ControllerAdministrativo.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->Consulta()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 16:33:46 --> mysqli_sql_exception: Unknown column 'Nombre' in 'field list' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT NoCuenta...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT NoCuenta...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT NoCuenta...')
+#3 C:\xampp\htdocs\Bib\app\Models\Bloqueos.php(20): CodeIgniter\Database\BaseConnection->query('SELECT NoCuenta...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ConsultarTodosLosBloqueos()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 16:33:46 --> Unknown column 'Nombre' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Bloqueos.php(20): CodeIgniter\Database\BaseConnection->query('SELECT NoCuenta, Nombre, Area, Semestre, Grupo, FechaBloqueo, FechaDesbloqueo FROM blocked_user')
+ 2 APPPATH\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ConsultarTodosLosBloqueos()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 16:38:53 --> mysqli_sql_exception: Unknown column 'Nombre' in 'field list' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT NoCuenta...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT NoCuenta...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT NoCuenta...')
+#3 C:\xampp\htdocs\Bib\app\Models\Bloqueos.php(20): CodeIgniter\Database\BaseConnection->query('SELECT NoCuenta...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ConsultarTodosLosBloqueos()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 16:38:53 --> Unknown column 'Nombre' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Bloqueos.php(20): CodeIgniter\Database\BaseConnection->query('SELECT NoCuenta, Nombre, Area, Semestre, Grupo, FechaBloqueo, FechaDesbloqueo FROM blocked_user')
+ 2 APPPATH\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ConsultarTodosLosBloqueos()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 16:38:55 --> mysqli_sql_exception: Unknown column 'Nombre' in 'field list' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT NoCuenta...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT NoCuenta...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT NoCuenta...')
+#3 C:\xampp\htdocs\Bib\app\Models\Bloqueos.php(20): CodeIgniter\Database\BaseConnection->query('SELECT NoCuenta...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ConsultarTodosLosBloqueos()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 16:38:55 --> Unknown column 'Nombre' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Bloqueos.php(20): CodeIgniter\Database\BaseConnection->query('SELECT NoCuenta, Nombre, Area, Semestre, Grupo, FechaBloqueo, FechaDesbloqueo FROM blocked_user')
+ 2 APPPATH\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ConsultarTodosLosBloqueos()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 16:39:06 --> mysqli_sql_exception: Unknown column 'Nombre' in 'field list' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT NoCuenta...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT NoCuenta...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT NoCuenta...')
+#3 C:\xampp\htdocs\Bib\app\Models\Bloqueos.php(20): CodeIgniter\Database\BaseConnection->query('SELECT NoCuenta...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ConsultarTodosLosBloqueos()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 16:39:06 --> Unknown column 'Nombre' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Bloqueos.php(20): CodeIgniter\Database\BaseConnection->query('SELECT NoCuenta, Nombre, Area, Semestre, Grupo, FechaBloqueo, FechaDesbloqueo FROM blocked_user')
+ 2 APPPATH\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ConsultarTodosLosBloqueos()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 16:41:40 --> mysqli_sql_exception: Unknown column 'Nombre' in 'field list' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT NoCuenta...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT NoCuenta...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT NoCuenta...')
+#3 C:\xampp\htdocs\Bib\app\Models\Bloqueos.php(20): CodeIgniter\Database\BaseConnection->query('SELECT NoCuenta...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ConsultarTodosLosBloqueos()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 16:41:40 --> Unknown column 'Nombre' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Bloqueos.php(20): CodeIgniter\Database\BaseConnection->query('SELECT NoCuenta, Nombre, Area, Semestre, Grupo, FechaBloqueo, FechaDesbloqueo FROM blocked_user')
+ 2 APPPATH\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ConsultarTodosLosBloqueos()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 16:41:56 --> mysqli_sql_exception: Unknown column 'Area' in 'field list' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT NoCuenta...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT NoCuenta...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT NoCuenta...')
+#3 C:\xampp\htdocs\Bib\app\Models\Bloqueos.php(20): CodeIgniter\Database\BaseConnection->query('SELECT NoCuenta...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ConsultarTodosLosBloqueos()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 16:41:56 --> Unknown column 'Area' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Bloqueos.php(20): CodeIgniter\Database\BaseConnection->query('SELECT NoCuenta, Area, Semestre, Grupo, FechaBloqueo, FechaDesbloqueo FROM blocked_user')
+ 2 APPPATH\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ConsultarTodosLosBloqueos()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 16:42:04 --> mysqli_sql_exception: Unknown column 'Area' in 'field list' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT NoCuenta...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT NoCuenta...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT NoCuenta...')
+#3 C:\xampp\htdocs\Bib\app\Models\Bloqueos.php(20): CodeIgniter\Database\BaseConnection->query('SELECT NoCuenta...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ConsultarTodosLosBloqueos()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 16:42:04 --> Unknown column 'Area' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Bloqueos.php(20): CodeIgniter\Database\BaseConnection->query('SELECT NoCuenta, Area, Semestre, Grupo, FechaBloqueo, FechaDesbloqueo FROM blocked_user')
+ 2 APPPATH\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ConsultarTodosLosBloqueos()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 16:42:41 --> mysqli_sql_exception: Unknown column 'Area' in 'field list' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT NoCuenta...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT NoCuenta...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT NoCuenta...')
+#3 C:\xampp\htdocs\Bib\app\Models\Bloqueos.php(20): CodeIgniter\Database\BaseConnection->query('SELECT NoCuenta...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ConsultarTodosLosBloqueos()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 16:42:41 --> Unknown column 'Area' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Bloqueos.php(20): CodeIgniter\Database\BaseConnection->query('SELECT NoCuenta, Area, Semestre, Grupo, FechaBloqueo, FechaDesbloqueo FROM blocked_user')
+ 2 APPPATH\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ConsultarTodosLosBloqueos()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 16:42:42 --> mysqli_sql_exception: Unknown column 'Area' in 'field list' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT NoCuenta...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT NoCuenta...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT NoCuenta...')
+#3 C:\xampp\htdocs\Bib\app\Models\Bloqueos.php(20): CodeIgniter\Database\BaseConnection->query('SELECT NoCuenta...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ConsultarTodosLosBloqueos()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 16:42:42 --> Unknown column 'Area' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Bloqueos.php(20): CodeIgniter\Database\BaseConnection->query('SELECT NoCuenta, Area, Semestre, Grupo, FechaBloqueo, FechaDesbloqueo FROM blocked_user')
+ 2 APPPATH\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ConsultarTodosLosBloqueos()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 16:45:05 --> mysqli_sql_exception: Unknown column 'Area' in 'field list' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT NoCuenta...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT NoCuenta...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT NoCuenta...')
+#3 C:\xampp\htdocs\Bib\app\Models\Bloqueos.php(20): CodeIgniter\Database\BaseConnection->query('SELECT NoCuenta...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ConsultarTodosLosBloqueos()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 16:45:05 --> Unknown column 'Area' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Bloqueos.php(20): CodeIgniter\Database\BaseConnection->query('SELECT NoCuenta, Area, Semestre, Grupo, FechaBloqueo, FechaDesbloqueo FROM blocked_user')
+ 2 APPPATH\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ConsultarTodosLosBloqueos()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 16:46:21 --> mysqli_sql_exception: Unknown column 'Nombre' in 'field list' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT NoCuenta...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT NoCuenta...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT NoCuenta...')
+#3 C:\xampp\htdocs\Bib\app\Models\Bloqueos.php(20): CodeIgniter\Database\BaseConnection->query('SELECT NoCuenta...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ConsultarTodosLosBloqueos()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 16:46:21 --> Unknown column 'Nombre' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Bloqueos.php(20): CodeIgniter\Database\BaseConnection->query('SELECT NoCuenta,Nombre Area, Semestre, Grupo, FechaBloqueo, FechaDesbloqueo FROM blocked_user')
+ 2 APPPATH\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ConsultarTodosLosBloqueos()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 17:10:30 --> Call to undefined method App\Models\Bloqueos::ConsultarTodosLosBloqueos
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\ControllerBloqueos.php(14): CodeIgniter\Model->__call('ConsultarTodosLosBloqueos', [])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 17:12:21 --> Call to undefined method App\Models\Bloqueos::ConsultarTodosLosBloqueos
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\ControllerBloqueos.php(14): CodeIgniter\Model->__call('ConsultarTodosLosBloqueos', [])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 17:18:07 --> mysqli_sql_exception: Unknown column 'a.semestre' in 'field list' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT u.NoCuen...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT u.NoCuen...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT u.NoCuen...')
+#3 C:\xampp\htdocs\Bib\app\Models\Bloqueos.php(24): CodeIgniter\Database\BaseConnection->query('SELECT u.NoCuen...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ListarBloqueos()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 17:18:07 --> Unknown column 'a.semestre' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Bloqueos.php(24): CodeIgniter\Database\BaseConnection->query('SELECT u.NoCuenta, u.Nombre, u.area, a.semestre, a.grupo FROM user u INNER JOIN blocked_user a ON u.NoCuenta = a.NoCuenta')
+ 2 APPPATH\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ListarBloqueos()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 17:23:36 --> mysqli_sql_exception: Unknown column 'a.semestre' in 'field list' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT u.NoCuen...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT u.NoCuen...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT u.NoCuen...')
+#3 C:\xampp\htdocs\Bib\app\Models\Bloqueos.php(24): CodeIgniter\Database\BaseConnection->query('SELECT u.NoCuen...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ListarBloqueos()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 17:23:36 --> Unknown column 'a.semestre' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Bloqueos.php(24): CodeIgniter\Database\BaseConnection->query('SELECT u.NoCuenta, u.Nombre, u.area, a.semestre, a.grupo FROM blocked_user a JOIN user u  ON u.NoCuenta = a.NoCuenta')
+ 2 APPPATH\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ListarBloqueos()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 17:23:54 --> mysqli_sql_exception: Unknown column 'u.semestre' in 'field list' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT u.NoCuen...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT u.NoCuen...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT u.NoCuen...')
+#3 C:\xampp\htdocs\Bib\app\Models\Bloqueos.php(24): CodeIgniter\Database\BaseConnection->query('SELECT u.NoCuen...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ListarBloqueos()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 17:23:54 --> Unknown column 'u.semestre' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Bloqueos.php(24): CodeIgniter\Database\BaseConnection->query('SELECT u.NoCuenta, u.Nombre, u.area, u.semestre, u.grupo FROM blocked_user a JOIN user u  ON u.NoCuenta = a.NoCuenta')
+ 2 APPPATH\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ListarBloqueos()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 17:25:21 --> mysqli_sql_exception: Unknown column 'u.semestre' in 'field list' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT a.NoCuen...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.NoCuen...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.NoCuen...')
+#3 C:\xampp\htdocs\Bib\app\Models\Bloqueos.php(24): CodeIgniter\Database\BaseConnection->query('SELECT a.NoCuen...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ListarBloqueos()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 17:25:21 --> Unknown column 'u.semestre' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Bloqueos.php(24): CodeIgniter\Database\BaseConnection->query('SELECT a.NoCuenta, u.Nombre, u.area, u.semestre, u.grupo FROM blocked_user a JOIN user u  ON u.NoCuenta = a.NoCuenta')
+ 2 APPPATH\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ListarBloqueos()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 17:36:12 --> mysqli_sql_exception: Duplicate entry '1234' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(44): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 17:36:12 --> Duplicate entry '1234' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(44): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 18:25:46 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`administrativo`, CONSTRAINT `administrativo_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM use...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM use...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM use...')
+#3 C:\xampp\htdocs\Bib\app\Models\Admin.php(27): CodeIgniter\Database\BaseConnection->query('DELETE FROM use...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdmin.php(59): App\Models\Admin->eliminarAdmin('1')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdmin->eliminar_admin('1')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 18:25:46 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`administrativo`, CONSTRAINT `administrativo_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Admin.php(27): CodeIgniter\Database\BaseConnection->query('DELETE FROM user WHERE NoCuenta = ?', [...])
+ 2 APPPATH\Controllers\ControllerAdmin.php(59): App\Models\Admin->eliminarAdmin('1')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdmin->eliminar_admin('1')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 18:25:46 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`administrativo`, CONSTRAINT `administrativo_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM use...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM use...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM use...')
+#3 C:\xampp\htdocs\Bib\app\Models\Admin.php(27): CodeIgniter\Database\BaseConnection->query('DELETE FROM use...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdmin.php(59): App\Models\Admin->eliminarAdmin('1')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdmin->eliminar_admin('1')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 18:25:46 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`administrativo`, CONSTRAINT `administrativo_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Admin.php(27): CodeIgniter\Database\BaseConnection->query('DELETE FROM user WHERE NoCuenta = ?', [...])
+ 2 APPPATH\Controllers\ControllerAdmin.php(59): App\Models\Admin->eliminarAdmin('1')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdmin->eliminar_admin('1')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 18:39:51 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAd...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAd...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAd...')
+#3 C:\xampp\htdocs\Bib\app\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAd...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdministrativo.php(56): App\Models\Administrativos->insertarAdministrativo(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 18:39:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAdministrativo(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAdministrativo.php(56): App\Models\Administrativos->insertarAdministrativo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 18:39:53 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAd...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAd...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAd...')
+#3 C:\xampp\htdocs\Bib\app\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAd...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdministrativo.php(56): App\Models\Administrativos->insertarAdministrativo(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 18:39:53 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAdministrativo(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAdministrativo.php(56): App\Models\Administrativos->insertarAdministrativo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 18:39:53 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAd...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAd...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAd...')
+#3 C:\xampp\htdocs\Bib\app\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAd...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdministrativo.php(56): App\Models\Administrativos->insertarAdministrativo(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 18:39:53 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAdministrativo(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAdministrativo.php(56): App\Models\Administrativos->insertarAdministrativo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 18:39:54 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAd...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAd...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAd...')
+#3 C:\xampp\htdocs\Bib\app\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAd...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdministrativo.php(56): App\Models\Administrativos->insertarAdministrativo(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 18:39:54 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAdministrativo(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAdministrativo.php(56): App\Models\Administrativos->insertarAdministrativo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 18:39:54 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAd...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAd...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAd...')
+#3 C:\xampp\htdocs\Bib\app\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAd...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdministrativo.php(56): App\Models\Administrativos->insertarAdministrativo(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 18:39:54 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAdministrativo(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAdministrativo.php(56): App\Models\Administrativos->insertarAdministrativo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 18:42:18 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAd...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAd...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAd...')
+#3 C:\xampp\htdocs\Bib\app\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAd...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdministrativo.php(56): App\Models\Administrativos->insertarAdministrativo(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 18:42:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAdministrativo(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAdministrativo.php(56): App\Models\Administrativos->insertarAdministrativo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 18:47:20 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAd...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAd...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAd...')
+#3 C:\xampp\htdocs\Bib\app\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAd...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdministrativo.php(56): App\Models\Administrativos->insertarAdministrativo(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 18:47:20 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAdministrativo(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAdministrativo.php(56): App\Models\Administrativos->insertarAdministrativo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 19:05:00 --> mysqli_sql_exception: Duplicate entry '321654' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO use...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 C:\xampp\htdocs\Bib\app\Models\Admin.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdmin.php(39): App\Models\Admin->insertarAdmin(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdmin->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 19:05:00 --> Duplicate entry '321654' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Admin.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO user(NoCuenta, Nombre, Contrasena, is_admin) VALUES (?,?,?,1)', [...])
+ 2 APPPATH\Controllers\ControllerAdmin.php(39): App\Models\Admin->insertarAdmin([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdmin->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 19:05:17 --> mysqli_sql_exception: Duplicate entry '321654' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO use...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 C:\xampp\htdocs\Bib\app\Models\Admin.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdmin.php(39): App\Models\Admin->insertarAdmin(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdmin->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 19:05:17 --> Duplicate entry '321654' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Admin.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO user(NoCuenta, Nombre, Contrasena, is_admin) VALUES (?,?,?,1)', [...])
+ 2 APPPATH\Controllers\ControllerAdmin.php(39): App\Models\Admin->insertarAdmin([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdmin->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 19:07:37 --> mysqli_sql_exception: Duplicate entry '321654' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(44): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 19:07:37 --> Duplicate entry '321654' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(44): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-15 22:35:33 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-15 22:35:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(42): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

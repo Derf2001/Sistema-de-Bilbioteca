@@ -1,0 +1,262 @@
+ERROR - 2024-05-07 21:39:10 --> mysqli_sql_exception: Duplicate entry '258' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO use...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 C:\xampp\htdocs\Bib\app\Models\Admin.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdmin.php(39): App\Models\Admin->insertarAdmin(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdmin->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-07 21:39:10 --> Duplicate entry '258' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO user(NoCuenta, Nombre, Contrasena, is_admin) VALUES (\'258\',\'ecis\',\'123456\',1)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO user(NoCuenta, Nombre, Contrasena, is_admin) VALUES (\'258\',\'ecis\',\'123456\',1)')
+ 3 APPPATH\Models\Admin.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO user(NoCuenta, Nombre, Contrasena, is_admin) VALUES (?,?,?,1)', [...])
+ 4 APPPATH\Controllers\ControllerAdmin.php(39): App\Models\Admin->insertarAdmin([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdmin->add()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-07 21:39:36 --> mysqli_sql_exception: Duplicate entry '3145' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO use...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 C:\xampp\htdocs\Bib\app\Models\Admin.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdmin.php(39): App\Models\Admin->insertarAdmin(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdmin->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-07 21:39:36 --> Duplicate entry '3145' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO user(NoCuenta, Nombre, Contrasena, is_admin) VALUES (\'3145\',\'ambar\',\'987654321\',1)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO user(NoCuenta, Nombre, Contrasena, is_admin) VALUES (\'3145\',\'ambar\',\'987654321\',1)')
+ 3 APPPATH\Models\Admin.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO user(NoCuenta, Nombre, Contrasena, is_admin) VALUES (?,?,?,1)', [...])
+ 4 APPPATH\Controllers\ControllerAdmin.php(39): App\Models\Admin->insertarAdmin([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdmin->add()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-07 21:42:39 --> mysqli_sql_exception: Duplicate entry '1000' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO use...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 C:\xampp\htdocs\Bib\app\Models\Admin.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdmin.php(39): App\Models\Admin->insertarAdmin(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdmin->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-07 21:42:39 --> Duplicate entry '1000' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO user(NoCuenta, Nombre, Contrasena, is_admin) VALUES (\'1000\',\'López López Roberto\',\'12091989\',1)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO user(NoCuenta, Nombre, Contrasena, is_admin) VALUES (\'1000\',\'López López Roberto\',\'12091989\',1)')
+ 3 APPPATH\Models\Admin.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO user(NoCuenta, Nombre, Contrasena, is_admin) VALUES (?,?,?,1)', [...])
+ 4 APPPATH\Controllers\ControllerAdmin.php(39): App\Models\Admin->insertarAdmin([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdmin->add()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-07 21:43:36 --> mysqli_sql_exception: Duplicate entry '1000' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO use...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 C:\xampp\htdocs\Bib\app\Models\Admin.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdmin.php(39): App\Models\Admin->insertarAdmin(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdmin->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-07 21:43:36 --> Duplicate entry '1000' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO user(NoCuenta, Nombre, Contrasena, is_admin) VALUES (\'1000\',\'López López beto\',\'12091989\',1)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO user(NoCuenta, Nombre, Contrasena, is_admin) VALUES (\'1000\',\'López López beto\',\'12091989\',1)')
+ 3 APPPATH\Models\Admin.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO user(NoCuenta, Nombre, Contrasena, is_admin) VALUES (?,?,?,1)', [...])
+ 4 APPPATH\Controllers\ControllerAdmin.php(39): App\Models\Admin->insertarAdmin([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAdmin->add()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-07 21:50:22 --> mysqli_sql_exception: Duplicate entry '3000' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAd...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAd...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAd...')
+#3 C:\xampp\htdocs\Bib\app\Models\Administrativos.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarAd...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAdministrativo.php(55): App\Models\Administrativos->insertarAdministrativo(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAdministrativo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAdministrativo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-05-07 21:55:47 --> mysqli_sql_exception: Duplicate entry 'I-0001' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(44): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-05-07 22:12:06 --> mysqli_sql_exception: bloqueado, in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO asi...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO asi...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO asi...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(110): CodeIgniter\Database\BaseConnection->query('INSERT INTO asi...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(189): App\Models\Principal->ValidarAll(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->ValidarAll('0322140002', 'B5')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-05-07 22:12:11 --> mysqli_sql_exception: bloqueado, in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO asi...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO asi...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO asi...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(110): CodeIgniter\Database\BaseConnection->query('INSERT INTO asi...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(189): App\Models\Principal->ValidarAll(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->ValidarAll('0322140001', 'A9')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-05-07 22:14:36 --> mysqli_sql_exception: ocupado,A17 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO asi...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO asi...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO asi...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(110): CodeIgniter\Database\BaseConnection->query('INSERT INTO asi...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(189): App\Models\Principal->ValidarAll(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->ValidarAll('0322140005', 'A17')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-05-07 22:15:33 --> mysqli_sql_exception: ocupado,C15 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO asi...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO asi...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO asi...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(110): CodeIgniter\Database\BaseConnection->query('INSERT INTO asi...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(189): App\Models\Principal->ValidarAll(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->ValidarAll('0322140005', 'C15')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-05-07 22:16:41 --> mysqli_sql_exception: ocupado,E10 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO asi...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO asi...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO asi...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(110): CodeIgniter\Database\BaseConnection->query('INSERT INTO asi...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(189): App\Models\Principal->ValidarAll(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->ValidarAll('0322140005', 'E10')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-05-07 22:17:03 --> mysqli_sql_exception: ocupado,B7 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO asi...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO asi...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO asi...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(110): CodeIgniter\Database\BaseConnection->query('INSERT INTO asi...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(189): App\Models\Principal->ValidarAll(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->ValidarAll('0322140005', 'B7')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-05-07 22:18:31 --> mysqli_sql_exception: bloqueado, in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO asi...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO asi...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO asi...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(110): CodeIgniter\Database\BaseConnection->query('INSERT INTO asi...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(189): App\Models\Principal->ValidarAll(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->ValidarAll('0322140004', 'B6')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-05-07 22:24:39 --> mysqli_sql_exception: Duplicate entry '0322140005' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO asi...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO asi...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO asi...')
+#3 C:\xampp\htdocs\Bib\app\Models\PrincipalComputo.php(21): CodeIgniter\Database\BaseConnection->query('INSERT INTO asi...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipalComputo.php(36): App\Models\PrincipalComputo->insertarAsiento(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipalComputo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipalComputo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-07 22:24:39 --> Duplicate entry '0322140005' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO asientos_computo VALUES (\'0322140005\', \'C-1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO asientos_computo VALUES (\'0322140005\', \'C-1\')')
+ 3 APPPATH\Models\PrincipalComputo.php(21): CodeIgniter\Database\BaseConnection->query('INSERT INTO asientos_computo VALUES (?, ?)', [...])
+ 4 APPPATH\Controllers\ControllerPrincipalComputo.php(36): App\Models\PrincipalComputo->insertarAsiento([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerPrincipalComputo->add()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipalComputo))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-07 22:24:39 --> mysqli_sql_exception: Duplicate entry '0322140005' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO asi...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO asi...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO asi...')
+#3 C:\xampp\htdocs\Bib\app\Models\PrincipalComputo.php(21): CodeIgniter\Database\BaseConnection->query('INSERT INTO asi...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipalComputo.php(36): App\Models\PrincipalComputo->insertarAsiento(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipalComputo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipalComputo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-07 22:24:39 --> Duplicate entry '0322140005' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO asientos_computo VALUES (\'0322140005\', \'C-1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO asientos_computo VALUES (\'0322140005\', \'C-1\')')
+ 3 APPPATH\Models\PrincipalComputo.php(21): CodeIgniter\Database\BaseConnection->query('INSERT INTO asientos_computo VALUES (?, ?)', [...])
+ 4 APPPATH\Controllers\ControllerPrincipalComputo.php(36): App\Models\PrincipalComputo->insertarAsiento([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerPrincipalComputo->add()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipalComputo))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-07 22:25:38 --> mysqli_sql_exception: Duplicate entry '0322140034' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO asi...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO asi...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO asi...')
+#3 C:\xampp\htdocs\Bib\app\Models\PrincipalComputo.php(21): CodeIgniter\Database\BaseConnection->query('INSERT INTO asi...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipalComputo.php(36): App\Models\PrincipalComputo->insertarAsiento(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipalComputo->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipalComputo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-07 22:25:38 --> Duplicate entry '0322140034' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO asientos_computo VALUES (\'0322140034\', \'C-1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO asientos_computo VALUES (\'0322140034\', \'C-1\')')
+ 3 APPPATH\Models\PrincipalComputo.php(21): CodeIgniter\Database\BaseConnection->query('INSERT INTO asientos_computo VALUES (?, ?)', [...])
+ 4 APPPATH\Controllers\ControllerPrincipalComputo.php(36): App\Models\PrincipalComputo->insertarAsiento([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerPrincipalComputo->add()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipalComputo))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

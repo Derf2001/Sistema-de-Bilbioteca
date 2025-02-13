@@ -1,0 +1,64 @@
+CRITICAL - 2024-03-06 19:07:28 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 252.
+ 1 SYSTEMPATH\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2024-03-06 19:09:00 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 252.
+ 1 SYSTEMPATH\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->initialize()
+ERROR - 2024-03-06 18:10:39 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'biblioteca' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'biblioteca', 3306, '', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Bib\app\Models\Bloqueos.php(21): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ListarBloqueos()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'biblioteca' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Bib\app\Models\Bloqueos.php(21): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#3 C:\xampp\htdocs\Bib\app\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ListarBloqueos()
+#4 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-06 18:10:39 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'biblioteca'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Bloqueos.php(21): CodeIgniter\Database\BaseConnection->query('SELECT
+        bu.idBlocked,
+        bu.NoCuenta,
+        u.Nombre,
+        u.area,
+        IFNULL(p.cargo, IFNULL(ad.cargo, \'\')) AS Cargo,
+        a.semestre,
+        a.grupo,
+        bu.motivo,
+        DATE(FROM_UNIXTIME(bu.FechaBloqueo)) as FechaBloqueo,
+        DATE(FROM_UNIXTIME(bu.FechaDesbloqueo)) as FechaDesbloqueo
+    FROM
+        blocked_user bu
+    LEFT JOIN
+        user u ON bu.NoCuenta = u.NoCuenta
+    LEFT JOIN
+        alumno a ON a.NoCuenta = u.NoCuenta
+    LEFT JOIN
+        profesor p ON p.NoCuenta = u.NoCuenta
+    LEFT JOIN
+        administrativo ad ON ad.NoCuenta = u.NoCuenta')
+ 3 APPPATH\Controllers\ControllerBloqueos.php(14): App\Models\Bloqueos->ListarBloqueos()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerBloqueos->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerBloqueos))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,63 @@
+ERROR - 2024-02-24 14:38:03 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND r.salida != ''' at line 2 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT TIME(FRO...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT TIME(FRO...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT TIME(FRO...')
+#3 C:\xampp\htdocs\Bib\app\Models\ConsultaUsuarios.php(52): CodeIgniter\Database\BaseConnection->query('SELECT TIME(FRO...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\Busquedas.php(64): App\Models\ConsultaUsuarios->obtenerHora('22', '48')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\Busquedas->buscarRegistros()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Busquedas))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-24 14:38:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND r.salida != ''' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\ConsultaUsuarios.php(52): CodeIgniter\Database\BaseConnection->query('SELECT TIME(FROM_UNIXTIME(r.entrada, \'%H:%i:%s\' )) AS Entrada, u.area as Área, u.Nombre AS Nombre ,u.NoCuenta AS Cuenta, IFNULL(p.cargo, IFNULL(ad.cargo, \'\')) AS Cargo, a.semestre as Semestre, a.grupo as Grupo, r.asiento AS Asiento, DATE_FORMAT(FROM_UNIXTIME(r.entrada), \'%d-%m-%Y\') AS Fecha , IF(r.salida = \'\', \'\', TIME(FROM_UNIXTIME(r.salida, \'%H:%i:%s\'))) AS Salida FROM record r LEFT JOIN alumno a ON a.NoCuenta = r.NoCuenta LEFT JOIN invitado i ON i.NoCuenta = r.NoCuenta LEFT JOIN profesor p ON p.NoCuenta = r.NoCuenta LEFT JOIN administrativo ad ON ad.NoCuenta = r.NoCuenta LEFT JOIN user u ON u.NoCuenta = r.NoCuenta
+           WHERE HOUR(FROM_UNIXTIME(r.entrada)) = ? AND MINUTE(FROM_UNIXTIME(r.entrada)) = ?; AND r.salida != \'\';', [...])
+ 2 APPPATH\Controllers\Busquedas.php(64): App\Models\ConsultaUsuarios->obtenerHora('22', '48')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Busquedas->buscarRegistros()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Busquedas))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-24 14:38:16 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND r.salida != ''' at line 2 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT TIME(FRO...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT TIME(FRO...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT TIME(FRO...')
+#3 C:\xampp\htdocs\Bib\app\Models\ConsultaUsuarios.php(52): CodeIgniter\Database\BaseConnection->query('SELECT TIME(FRO...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\Busquedas.php(64): App\Models\ConsultaUsuarios->obtenerHora('10', '38')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\Busquedas->buscarRegistros()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Busquedas))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-24 14:38:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND r.salida != ''' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\ConsultaUsuarios.php(52): CodeIgniter\Database\BaseConnection->query('SELECT TIME(FROM_UNIXTIME(r.entrada, \'%H:%i:%s\' )) AS Entrada, u.area as Área, u.Nombre AS Nombre ,u.NoCuenta AS Cuenta, IFNULL(p.cargo, IFNULL(ad.cargo, \'\')) AS Cargo, a.semestre as Semestre, a.grupo as Grupo, r.asiento AS Asiento, DATE_FORMAT(FROM_UNIXTIME(r.entrada), \'%d-%m-%Y\') AS Fecha , IF(r.salida = \'\', \'\', TIME(FROM_UNIXTIME(r.salida, \'%H:%i:%s\'))) AS Salida FROM record r LEFT JOIN alumno a ON a.NoCuenta = r.NoCuenta LEFT JOIN invitado i ON i.NoCuenta = r.NoCuenta LEFT JOIN profesor p ON p.NoCuenta = r.NoCuenta LEFT JOIN administrativo ad ON ad.NoCuenta = r.NoCuenta LEFT JOIN user u ON u.NoCuenta = r.NoCuenta
+           WHERE HOUR(FROM_UNIXTIME(r.entrada)) = ? AND MINUTE(FROM_UNIXTIME(r.entrada)) = ?; AND r.salida != \'\';', [...])
+ 2 APPPATH\Controllers\Busquedas.php(64): App\Models\ConsultaUsuarios->obtenerHora('10', '38')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Busquedas->buscarRegistros()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Busquedas))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-24 14:38:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND r.salida != ''' at line 2 in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT TIME(FRO...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT TIME(FRO...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT TIME(FRO...')
+#3 C:\xampp\htdocs\Bib\app\Models\ConsultaUsuarios.php(52): CodeIgniter\Database\BaseConnection->query('SELECT TIME(FRO...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\Busquedas.php(64): App\Models\ConsultaUsuarios->obtenerHora('22', '48')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\Busquedas->buscarRegistros()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Busquedas))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-24 14:38:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND r.salida != ''' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\ConsultaUsuarios.php(52): CodeIgniter\Database\BaseConnection->query('SELECT TIME(FROM_UNIXTIME(r.entrada, \'%H:%i:%s\' )) AS Entrada, u.area as Área, u.Nombre AS Nombre ,u.NoCuenta AS Cuenta, IFNULL(p.cargo, IFNULL(ad.cargo, \'\')) AS Cargo, a.semestre as Semestre, a.grupo as Grupo, r.asiento AS Asiento, DATE_FORMAT(FROM_UNIXTIME(r.entrada), \'%d-%m-%Y\') AS Fecha , IF(r.salida = \'\', \'\', TIME(FROM_UNIXTIME(r.salida, \'%H:%i:%s\'))) AS Salida FROM record r LEFT JOIN alumno a ON a.NoCuenta = r.NoCuenta LEFT JOIN invitado i ON i.NoCuenta = r.NoCuenta LEFT JOIN profesor p ON p.NoCuenta = r.NoCuenta LEFT JOIN administrativo ad ON ad.NoCuenta = r.NoCuenta LEFT JOIN user u ON u.NoCuenta = r.NoCuenta
+           WHERE HOUR(FROM_UNIXTIME(r.entrada)) = ? AND MINUTE(FROM_UNIXTIME(r.entrada)) = ?; AND r.salida != \'\';', [...])
+ 2 APPPATH\Controllers\Busquedas.php(64): App\Models\ConsultaUsuarios->obtenerHora('22', '48')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Busquedas->buscarRegistros()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Busquedas))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

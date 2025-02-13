@@ -1,0 +1,156 @@
+ERROR - 2023-12-23 20:38:11 --> mysqli_sql_exception: Unknown column 'u.Apellido_P' in 'field list' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL ConsultarT...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL ConsultarT...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL ConsultarT...')
+#3 C:\xampp\htdocs\Bib\app\Models\Profesores.php(23): CodeIgniter\Database\BaseConnection->query('CALL ConsultarT...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControladorProfesor.php(13): App\Models\Profesores->ListarProfesores()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControladorProfesor->index()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControladorProfesor))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-23 20:38:11 --> Unknown column 'u.Apellido_P' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Profesores.php(23): CodeIgniter\Database\BaseConnection->query('CALL ConsultarTodosLosProfesores()')
+ 2 APPPATH\Controllers\ControladorProfesor.php(13): App\Models\Profesores->ListarProfesores()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControladorProfesor->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControladorProfesor))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-23 20:41:55 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(44): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-23 20:41:55 --> Duplicate entry '1' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(44): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-23 20:42:03 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(44): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-23 20:42:03 --> Duplicate entry '1' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(44): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-23 20:43:23 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(44): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-23 20:43:23 --> Duplicate entry '1' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(44): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-23 20:45:01 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(44): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-23 20:45:01 --> Duplicate entry '1' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(44): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-23 20:46:13 --> mysqli_sql_exception: Unknown column 'u.Apellido_P' in 'field list' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL ConsultarT...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL ConsultarT...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL ConsultarT...')
+#3 C:\xampp\htdocs\Bib\app\Models\Profesores.php(23): CodeIgniter\Database\BaseConnection->query('CALL ConsultarT...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControladorProfesor.php(13): App\Models\Profesores->ListarProfesores()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControladorProfesor->index()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControladorProfesor))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-23 20:46:13 --> Unknown column 'u.Apellido_P' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Profesores.php(23): CodeIgniter\Database\BaseConnection->query('CALL ConsultarTodosLosProfesores()')
+ 2 APPPATH\Controllers\ControladorProfesor.php(13): App\Models\Profesores->ListarProfesores()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControladorProfesor->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControladorProfesor))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-23 20:53:33 --> mysqli_sql_exception: Unknown column 'u.Apellido_P' in 'field list' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT\r\n       ...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\r\n       ...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#3 C:\xampp\htdocs\Bib\app\Models\Monitoreo.php(15): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerMonitoreo.php(14): App\Models\Monitoreo->Listar()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->index()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-23 20:53:33 --> Unknown column 'u.Apellido_P' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Monitoreo.php(15): CodeIgniter\Database\BaseConnection->query('SELECT
+        u.NoCuenta,
+        CONCAT(u.Nombre, \' \', u.Apellido_P, \' \', u.Apellido_M) AS nombre_completo,
+        u.area,
+        IFNULL(p.cargo, IFNULL(ad.cargo, \'Sin cargo asignado\')) AS cargo,
+        a.semestre,
+        a.grupo,
+        r.asiento,
+        r.entrada,
+        r.salida
+    FROM user u
+    LEFT JOIN alumno a ON a.NoCuenta = u.NoCuenta  
+    LEFT JOIN invitado i ON i.NoCuenta = u.NoCuenta
+    LEFT JOIN profesor p ON p.NoCuenta = u.NoCuenta
+    LEFT JOIN administrativo ad ON ad.NoCuenta = u.NoCuenta
+    LEFT JOIN record r ON r.NoCuenta = u.NoCuenta;
+    ')
+ 2 APPPATH\Controllers\ControllerMonitoreo.php(14): App\Models\Monitoreo->Listar()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

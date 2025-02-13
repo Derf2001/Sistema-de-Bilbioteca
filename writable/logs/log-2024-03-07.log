@@ -1,0 +1,1020 @@
+ERROR - 2024-03-07 14:28:15 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:28:15 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:28:18 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:28:18 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:28:28 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:28:28 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:28:35 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:28:35 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:28:35 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:28:35 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:28:41 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:28:41 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:28:41 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:28:41 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:28:56 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:28:56 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:28:56 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:28:56 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:29:02 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:29:02 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:29:02 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:29:02 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:29:09 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:29:09 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:29:09 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:29:09 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:29:15 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:29:15 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:29:15 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:29:15 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:29:31 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:29:31 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:29:31 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:29:31 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:29:38 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:29:38 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:29:38 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:29:38 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:30:03 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:30:03 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:30:03 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:30:03 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:30:07 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:30:07 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:30:07 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:30:07 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:30:12 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:30:12 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:30:12 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:30:12 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:30:16 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:30:16 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:30:17 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:30:17 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:30:21 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:30:21 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:30:21 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:30:21 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:31:38 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:31:38 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:31:38 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:31:38 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:31:43 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:31:43 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:31:44 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:31:44 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:31:49 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:31:49 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:31:49 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:31:49 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:31:53 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:31:53 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:31:54 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:31:54 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:31:59 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:31:59 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:31:59 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:31:59 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:32:04 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:32:04 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:32:04 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:32:04 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:32:09 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:32:09 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:32:09 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:32:09 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:32:14 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:32:14 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:32:14 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:32:14 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:32:34 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:32:34 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:32:35 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:32:35 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:32:35 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0323150017')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0323150017')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:32:35 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0323150017')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0323150017')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:50:46 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-03-07 14:50:46 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:50:46 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0319140021')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0319140021')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-07 14:50:46 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0321150010')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0321150010')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-07 14:50:47 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0323150017')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0323150017')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-07 14:50:47 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`record`, CONSTRAINT `record_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(28): CodeIgniter\Database\BaseConnection->query('CALL EliminarAlumno(?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(65): App\Models\Alumno->eliminarAlumno('0323150017')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->eliminar_alumno('0323150017')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

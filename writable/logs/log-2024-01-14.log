@@ -1,0 +1,437 @@
+CRITICAL - 2024-01-14 00:06:43 --> Undefined array key 0
+in APPPATH\ThirdParty\TCPDFmain\tcpdf.php on line 17322.
+ 1 APPPATH\ThirdParty\TCPDFmain\tcpdf.php(17322): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\Bib\\app\\ThirdParty\\TCPDFmain\\tcpdf.php', 17322)
+ 2 APPPATH\Controllers\PdfController.php(32): TCPDF->writeHTML('
+        <img src="path/to/imagen1.jpg" style="position: absolute; left: 10mm; top: 10mm; width: 20mm;">
+        <img src="path/to/imagen2.jpg" style="position: absolute; left: 180mm; top: 10mm; width: 20mm;">
+        <div style="text-align: center; color: #fff;">Universidad del Istmo</div>
+        <!-- Otro contenido... -->
+    ', true, false, true, false, '')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PdfController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 00:13:54 --> Undefined variable $html
+in APPPATH\Controllers\PdfController.php on line 36.
+ 1 APPPATH\Controllers\PdfController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $html', 'C:\\xampp\\htdocs\\Bib\\app\\Controllers\\PdfController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PdfController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 00:16:42 --> Undefined array key 0
+in APPPATH\ThirdParty\TCPDFmain\tcpdf.php on line 17322.
+ 1 APPPATH\ThirdParty\TCPDFmain\tcpdf.php(17322): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\Bib\\app\\ThirdParty\\TCPDFmain\\tcpdf.php', 17322)
+ 2 APPPATH\Controllers\PdfController.php(116): TCPDF->writeHTML('
+    <img src="path/to/imagen1.jpg" style="position: absolute; left: 10mm; top: 10mm; width: 20mm;">
+    <img src="path/to/imagen2.jpg" style="position: absolute; left: 180mm; top: 10mm; width: 20mm;">
+    <div style="text-align: center; color: #fff;">Universidad del Istmo</div>
+    <!-- Otro contenido... -->
+', true, false, true, false, '')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PdfController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 00:16:45 --> Undefined array key 0
+in APPPATH\ThirdParty\TCPDFmain\tcpdf.php on line 17322.
+ 1 APPPATH\ThirdParty\TCPDFmain\tcpdf.php(17322): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\Bib\\app\\ThirdParty\\TCPDFmain\\tcpdf.php', 17322)
+ 2 APPPATH\Controllers\PdfController.php(116): TCPDF->writeHTML('
+    <img src="path/to/imagen1.jpg" style="position: absolute; left: 10mm; top: 10mm; width: 20mm;">
+    <img src="path/to/imagen2.jpg" style="position: absolute; left: 180mm; top: 10mm; width: 20mm;">
+    <div style="text-align: center; color: #fff;">Universidad del Istmo</div>
+    <!-- Otro contenido... -->
+', true, false, true, false, '')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PdfController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 01:55:47 --> Undefined array key 0
+in APPPATH\ThirdParty\TCPDFmain\tcpdf.php on line 17322.
+ 1 APPPATH\ThirdParty\TCPDFmain\tcpdf.php(17322): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\Bib\\app\\ThirdParty\\TCPDFmain\\tcpdf.php', 17322)
+ 2 APPPATH\Controllers\PdfController.php(149): TCPDF->writeHTML('
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .header {
+
+            text-align: center;
+            overflow: hidden; /* Para limpiar el float */
+        }
+
+        .center-text {
+            display: inline-block;
+        }
+
+        .content {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+      
+        .content-table {
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9em;
+            min-width: 400px;
+            border-radius: 5px 5px 0 0;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .content-table thead tr {
+            background-color: #009879;
+            color: #ffffff;
+            text-align: left;
+            font-weight: bold;
+        }
+        
+        .content-table th,
+        .content-table td {
+            padding: 12px 15px;
+        }
+        
+        .content-table tbody tr {
+            border-bottom: 1px solid #5ddd5d;
+        }
+    
+       
+    </style>
+        <div class="header">          
+            <div class="center-text">
+                <h2>Universidad del Istmo</h2>
+                <h3>CAMPUS JUCHITAN</h3>
+                <h4>DEPARTAMENTO DE BIBLIOTECA</h4>
+            </div>
+        </div>
+    
+    <div class="content">
+        <h2>REPORTE GENERAL</h2>
+        
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>NoCuenta</th>
+                    <th>Nombre</th>
+                    <th>Area</th>
+                    <th>Cargo</th>
+                    <th>Semestre</th>
+                    <th>Grupo</th>
+                    <th>Asiento</th>
+                    <th>Entrada</th>
+                    <th>Salida</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>V</td>
+                    <td>3D</td>
+                    <td>3D</td>
+                    <td>Juan</td>
+                    <td>xd</td>
+                    <td>bbbbbb</td>
+                    <td></td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>V</td>
+                    <td>3D</td>
+                    <td>3D</td>
+                    <td>Juan</td>
+                    <td>xd</td>
+                    <td>bbbbbb</td>
+                    <td></td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>V</td>
+                    <td>3D</td>
+                    <td>3D</td>
+                    <td>Juan</td>
+                    <td>xd</td>
+                    <td>bbbbbb</td>
+                    <td></td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>', true, false, true, false, '')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PdfController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 02:19:38 --> Undefined array key 0
+in APPPATH\ThirdParty\TCPDFmain\tcpdf.php on line 17322.
+ 1 APPPATH\ThirdParty\TCPDFmain\tcpdf.php(17322): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\Bib\\app\\ThirdParty\\TCPDFmain\\tcpdf.php', 17322)
+ 2 APPPATH\Controllers\PdfController.php(158): TCPDF->writeHTML('
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .header {
+
+            text-align: center;
+            overflow: hidden; /* Para limpiar el float */
+        }
+
+        .center-text {
+            display: inline-block;
+        }
+
+        .content {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+      
+        .content-table {
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9em;
+            min-width: 400px;
+            border-radius: 5px 5px 0 0;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .content-table thead tr {
+            background-color: #009879;
+            color: #ffffff;
+            text-align: left;
+            font-weight: bold;
+        }
+        
+        .content-table th,
+        .content-table td {
+            padding: 12px 15px;
+        }
+        
+        .content-table tbody tr {
+            border-bottom: 1px solid #5ddd5d;
+        }
+    
+       
+    </style>
+        <div class="header">          
+            <div class="center-text">
+                <h2>Universidad del Istmo</h2>
+                <h3>CAMPUS JUCHITAN</h3>
+                <h4>DEPARTAMENTO DE BIBLIOTECA</h4>
+            </div>
+        </div>
+    
+    <div class="content">
+        <h2>REPORTE GENERAL</h2>
+        
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>NoCuenta</th>
+                    <th>Nombre</th>
+                    <th>Area</th>
+                    <th>Cargo</th>
+                    <th>Semestre</th>
+                    <th>Grupo</th>
+                    <th>Asiento</th>
+                    <th>Entrada</th>
+                    <th>Salida</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>V</td>
+                    <td>3D</td>
+                    <td>3D</td>
+                    <td>Juan</td>
+                    <td>xd</td>
+                    <td>bbbbbb</td>
+                    <td></td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>V</td>
+                    <td>3D</td>
+                    <td>3D</td>
+                    <td>Juan</td>
+                    <td>xd</td>
+                    <td>bbbbbb</td>
+                    <td></td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>', true, false, true, false, '')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PdfController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 02:19:53 --> Undefined array key 0
+in APPPATH\ThirdParty\TCPDFmain\tcpdf.php on line 17322.
+ 1 APPPATH\ThirdParty\TCPDFmain\tcpdf.php(17322): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\Bib\\app\\ThirdParty\\TCPDFmain\\tcpdf.php', 17322)
+ 2 APPPATH\Controllers\PdfController.php(158): TCPDF->writeHTML('
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .header {
+
+            text-align: center;
+            overflow: hidden; /* Para limpiar el float */
+        }
+
+        .center-text {
+            display: inline-block;
+        }
+
+        .content {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+      
+        .content-table {
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9em;
+            min-width: 400px;
+            border-radius: 5px 5px 0 0;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .content-table thead tr {
+            background-color: #009879;
+            color: #ffffff;
+            text-align: left;
+            font-weight: bold;
+        }
+        
+        .content-table th,
+        .content-table td {
+            padding: 12px 15px;
+        }
+        
+        .content-table tbody tr {
+            border-bottom: 1px solid #5ddd5d;
+        }
+    
+       
+    </style>
+        <div class="header">          
+            <div class="center-text">
+                <h2>Universidad del Istmo</h2>
+                <h3>CAMPUS JUCHITAN</h3>
+                <h4>DEPARTAMENTO DE BIBLIOTECA</h4>
+            </div>
+        </div>
+    
+    <div class="content">
+        <h2>REPORTE GENERAL</h2>
+        
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>NoCuenta</th>
+                    <th>Nombre</th>
+                    <th>Area</th>
+                    <th>Cargo</th>
+                    <th>Semestre</th>
+                    <th>Grupo</th>
+                    <th>Asiento</th>
+                    <th>Entrada</th>
+                    <th>Salida</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>V</td>
+                    <td>3D</td>
+                    <td>3D</td>
+                    <td>Juan</td>
+                    <td>xd</td>
+                    <td>bbbbbb</td>
+                    <td></td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>V</td>
+                    <td>3D</td>
+                    <td>3D</td>
+                    <td>Juan</td>
+                    <td>xd</td>
+                    <td>bbbbbb</td>
+                    <td></td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>', true, false, true, false, '')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PdfController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 02:27:58 --> Undefined variable $l
+in APPPATH\Controllers\PdfController.php on line 45.
+ 1 APPPATH\Controllers\PdfController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $l', 'C:\\xampp\\htdocs\\Bib\\app\\Controllers\\PdfController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PdfController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 02:44:03 --> Class "TCPDF" not found
+in APPPATH\Controllers\PdfController.php on line 7.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Bib\\app\\Controllers\\PdfController.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PdfController')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PdfController')
+ 5 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\PdfController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 02:45:01 --> Class "TCPDF" not found
+in APPPATH\Controllers\PdfController.php on line 181.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Bib\\app\\Controllers\\PdfController.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PdfController')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PdfController')
+ 5 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\PdfController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 02:45:02 --> Class "TCPDF" not found
+in APPPATH\Controllers\PdfController.php on line 181.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Bib\\app\\Controllers\\PdfController.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PdfController')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PdfController')
+ 5 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\PdfController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 02:45:02 --> Class "TCPDF" not found
+in APPPATH\Controllers\PdfController.php on line 181.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Bib\\app\\Controllers\\PdfController.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PdfController')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PdfController')
+ 5 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\PdfController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 02:45:03 --> Class "TCPDF" not found
+in APPPATH\Controllers\PdfController.php on line 181.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Bib\\app\\Controllers\\PdfController.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PdfController')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PdfController')
+ 5 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\PdfController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

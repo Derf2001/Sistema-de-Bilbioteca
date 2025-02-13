@@ -1,0 +1,328 @@
+ERROR - 2023-12-07 00:41:10 --> mysqli_sql_exception: Duplicate entry '121212' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(45): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-07 00:41:10 --> Duplicate entry '121212' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(45): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 00:41:11 --> mysqli_sql_exception: Duplicate entry '121212' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(45): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-07 00:41:11 --> Duplicate entry '121212' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(45): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 00:41:22 --> mysqli_sql_exception: Duplicate entry '121212' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(45): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-07 00:41:22 --> Duplicate entry '121212' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(45): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 01:09:18 --> Invalid file: "Profesores.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Profesores.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Profesores', [], true)
+ 3 APPPATH\Controllers\ControladorProfesor.php(20): view('Profesores', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControladorProfesor->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControladorProfesor))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 01:10:31 --> Invalid file: "Profesores.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Profesores.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Profesores', [], true)
+ 3 APPPATH\Controllers\ControladorProfesor.php(20): view('Profesores', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControladorProfesor->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControladorProfesor))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 02:56:05 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`administrativo`, CONSTRAINT `administrativo_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarPr...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarPr...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarPr...')
+#3 C:\xampp\htdocs\Bib\app\Models\Profesores.php(27): CodeIgniter\Database\BaseConnection->query('CALL EliminarPr...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControladorProfesor.php(67): App\Models\Profesores->eliminarProfesor('1')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControladorProfesor->eliminar_profesor('1')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControladorProfesor))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-07 02:56:05 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`administrativo`, CONSTRAINT `administrativo_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Profesores.php(27): CodeIgniter\Database\BaseConnection->query('CALL EliminarProfesor(?)', [...])
+ 2 APPPATH\Controllers\ControladorProfesor.php(67): App\Models\Profesores->eliminarProfesor('1')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControladorProfesor->eliminar_profesor('1')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControladorProfesor))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 02:56:08 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`administrativo`, CONSTRAINT `administrativo_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`)) in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL EliminarPr...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL EliminarPr...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL EliminarPr...')
+#3 C:\xampp\htdocs\Bib\app\Models\Profesores.php(27): CodeIgniter\Database\BaseConnection->query('CALL EliminarPr...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControladorProfesor.php(67): App\Models\Profesores->eliminarProfesor('1')
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControladorProfesor->eliminar_profesor('1')
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControladorProfesor))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-07 02:56:08 --> Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`administrativo`, CONSTRAINT `administrativo_ibfk_1` FOREIGN KEY (`NoCuenta`) REFERENCES `user` (`NoCuenta`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Profesores.php(27): CodeIgniter\Database\BaseConnection->query('CALL EliminarProfesor(?)', [...])
+ 2 APPPATH\Controllers\ControladorProfesor.php(67): App\Models\Profesores->eliminarProfesor('1')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControladorProfesor->eliminar_profesor('1')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControladorProfesor))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 23:42:58 --> mysqli_sql_exception: Unknown column 'r.NoCuenta ' in 'on clause' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT\r\n       ...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\r\n       ...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#3 C:\xampp\htdocs\Bib\app\Models\Monitoreo.php(15): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerMonitoreo.php(14): App\Models\Monitoreo->Listar()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->index()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-07 23:42:58 --> Unknown column 'r.NoCuenta ' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Monitoreo.php(15): CodeIgniter\Database\BaseConnection->query('SELECT
+        u.NoCuenta,
+        CONCAT(u.Nombre, \' \', u.Apellido_P, \' \', u.Apellido_M) AS nombre_completo,
+        u.area,
+        IFNULL(p.cargo, IFNULL(ad.cargo, \'Sin cargo asignado\')) AS cargo,
+        a.semestre,
+        a.grupo,
+        r.asiento,
+        r.entrada,
+        r.salida
+        FROM user u
+        LEFT JOIN alumno a ON a.NoCuenta = u.NoCuenta  
+        LEFT JOIN invitado i ON i.NoCuenta = u.NoCuenta
+        LEFT JOIN profesor p ON p.NoCuenta = u.NoCuenta
+        LEFT JOIN administrativo ad ON ad.NoCuenta = u.NoCuenta
+        LEFT JOIN record r ON r.NoCuenta = u.NoCuenta;')
+ 2 APPPATH\Controllers\ControllerMonitoreo.php(14): App\Models\Monitoreo->Listar()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 23:44:30 --> mysqli_sql_exception: Unknown column 'r.NoCuenta ' in 'on clause' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT\r\n       ...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\r\n       ...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#3 C:\xampp\htdocs\Bib\app\Models\Monitoreo.php(15): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerMonitoreo.php(14): App\Models\Monitoreo->Listar()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->index()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-07 23:44:30 --> Unknown column 'r.NoCuenta ' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Monitoreo.php(15): CodeIgniter\Database\BaseConnection->query('SELECT
+        u.NoCuenta,
+        CONCAT(u.Nombre, \' \', u.Apellido_P, \' \', u.Apellido_M) AS nombre_completo,
+        u.area,
+        IFNULL(p.cargo, IFNULL(ad.cargo, \'Sin cargo asignado\')) AS cargo,
+        a.semestre,
+        a.grupo,
+        r.asiento,
+        r.entrada,
+        r.salida
+        FROM user u
+        LEFT JOIN alumno a ON a.NoCuenta = u.NoCuenta  
+        LEFT JOIN invitado i ON i.NoCuenta = u.NoCuenta
+        LEFT JOIN profesor p ON p.NoCuenta = u.NoCuenta
+        LEFT JOIN administrativo ad ON ad.NoCuenta = u.NoCuenta
+        LEFT JOIN record r ON r.NoCuenta = u.NoCuenta;')
+ 2 APPPATH\Controllers\ControllerMonitoreo.php(14): App\Models\Monitoreo->Listar()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 23:45:18 --> mysqli_sql_exception: Unknown column 'r.NoCuenta ' in 'on clause' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT\r\n       ...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\r\n       ...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#3 C:\xampp\htdocs\Bib\app\Models\Monitoreo.php(15): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerMonitoreo.php(14): App\Models\Monitoreo->Listar()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->index()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-07 23:45:18 --> Unknown column 'r.NoCuenta ' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Monitoreo.php(15): CodeIgniter\Database\BaseConnection->query('SELECT
+        u.NoCuenta,
+        CONCAT(u.Nombre, \' \', u.Apellido_P, \' \', u.Apellido_M) AS nombre_completo,
+        u.area,
+        IFNULL(p.cargo, IFNULL(ad.cargo, \'Sin cargo asignado\')) AS cargo,
+        a.semestre,
+        a.grupo,
+        r.asiento,
+        r.entrada,
+        r.salida
+        FROM user u
+        LEFT JOIN alumno a ON a.NoCuenta = u.NoCuenta  
+        LEFT JOIN invitado i ON i.NoCuenta = u.NoCuenta
+        LEFT JOIN profesor p ON p.NoCuenta = u.NoCuenta
+        LEFT JOIN administrativo ad ON ad.NoCuenta = u.NoCuenta
+        LEFT JOIN record r ON r.NoCuenta = u.NoCuenta;')
+ 2 APPPATH\Controllers\ControllerMonitoreo.php(14): App\Models\Monitoreo->Listar()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 23:45:19 --> mysqli_sql_exception: Unknown column 'r.NoCuenta ' in 'on clause' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT\r\n       ...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\r\n       ...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#3 C:\xampp\htdocs\Bib\app\Models\Monitoreo.php(15): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerMonitoreo.php(14): App\Models\Monitoreo->Listar()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->index()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-07 23:45:19 --> Unknown column 'r.NoCuenta ' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Monitoreo.php(15): CodeIgniter\Database\BaseConnection->query('SELECT
+        u.NoCuenta,
+        CONCAT(u.Nombre, \' \', u.Apellido_P, \' \', u.Apellido_M) AS nombre_completo,
+        u.area,
+        IFNULL(p.cargo, IFNULL(ad.cargo, \'Sin cargo asignado\')) AS cargo,
+        a.semestre,
+        a.grupo,
+        r.asiento,
+        r.entrada,
+        r.salida
+        FROM user u
+        LEFT JOIN alumno a ON a.NoCuenta = u.NoCuenta  
+        LEFT JOIN invitado i ON i.NoCuenta = u.NoCuenta
+        LEFT JOIN profesor p ON p.NoCuenta = u.NoCuenta
+        LEFT JOIN administrativo ad ON ad.NoCuenta = u.NoCuenta
+        LEFT JOIN record r ON r.NoCuenta = u.NoCuenta;')
+ 2 APPPATH\Controllers\ControllerMonitoreo.php(14): App\Models\Monitoreo->Listar()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 23:45:30 --> mysqli_sql_exception: Unknown column 'r.NoCuenta ' in 'on clause' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT\r\n       ...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\r\n       ...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#3 C:\xampp\htdocs\Bib\app\Models\Monitoreo.php(15): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerMonitoreo.php(14): App\Models\Monitoreo->Listar()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->index()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-07 23:45:30 --> Unknown column 'r.NoCuenta ' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Monitoreo.php(15): CodeIgniter\Database\BaseConnection->query('SELECT
+        u.NoCuenta,
+        CONCAT(u.Nombre, \' \', u.Apellido_P, \' \', u.Apellido_M) AS nombre_completo,
+        u.area,
+        IFNULL(p.cargo, IFNULL(ad.cargo, \'Sin cargo asignado\')) AS cargo,
+        a.semestre,
+        a.grupo,
+        r.asiento,
+        r.entrada,
+        r.salida
+        FROM user u
+        LEFT JOIN alumno a ON a.NoCuenta = u.NoCuenta  
+        LEFT JOIN invitado i ON i.NoCuenta = u.NoCuenta
+        LEFT JOIN profesor p ON p.NoCuenta = u.NoCuenta
+        LEFT JOIN administrativo ad ON ad.NoCuenta = u.NoCuenta
+        LEFT JOIN record r ON r.NoCuenta = u.NoCuenta;')
+ 2 APPPATH\Controllers\ControllerMonitoreo.php(14): App\Models\Monitoreo->Listar()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 23:45:32 --> mysqli_sql_exception: Unknown column 'r.NoCuenta ' in 'on clause' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT\r\n       ...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\r\n       ...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#3 C:\xampp\htdocs\Bib\app\Models\Monitoreo.php(15): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerMonitoreo.php(14): App\Models\Monitoreo->Listar()
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->index()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-07 23:45:32 --> Unknown column 'r.NoCuenta ' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Monitoreo.php(15): CodeIgniter\Database\BaseConnection->query('SELECT
+        u.NoCuenta,
+        CONCAT(u.Nombre, \' \', u.Apellido_P, \' \', u.Apellido_M) AS nombre_completo,
+        u.area,
+        IFNULL(p.cargo, IFNULL(ad.cargo, \'Sin cargo asignado\')) AS cargo,
+        a.semestre,
+        a.grupo,
+        r.asiento,
+        r.entrada,
+        r.salida
+        FROM user u
+        LEFT JOIN alumno a ON a.NoCuenta = u.NoCuenta  
+        LEFT JOIN invitado i ON i.NoCuenta = u.NoCuenta
+        LEFT JOIN profesor p ON p.NoCuenta = u.NoCuenta
+        LEFT JOIN administrativo ad ON ad.NoCuenta = u.NoCuenta
+        LEFT JOIN record r ON r.NoCuenta = u.NoCuenta;')
+ 2 APPPATH\Controllers\ControllerMonitoreo.php(14): App\Models\Monitoreo->Listar()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

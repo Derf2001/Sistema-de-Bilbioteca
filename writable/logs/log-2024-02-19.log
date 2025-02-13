@@ -1,0 +1,20 @@
+ERROR - 2024-02-19 04:43:58 --> mysqli_sql_exception: Duplicate entry '0314150001' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarIn...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarIn...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarIn...')
+#3 C:\xampp\htdocs\Bib\app\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarIn...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerInvitados.php(44): App\Models\Invitado->insertarInvitado(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-19 04:43:58 --> Duplicate entry '0314150001' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Invitado.php(15): CodeIgniter\Database\BaseConnection->query('CALL InsertarInvitado(?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerInvitados.php(44): App\Models\Invitado->insertarInvitado([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerInvitados->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerInvitados))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

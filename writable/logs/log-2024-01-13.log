@@ -1,0 +1,194 @@
+CRITICAL - 2024-01-13 20:33:24 --> filesize(): stat failed for http://localhost/Bib/public/example_01.pdf
+in APPPATH\Controllers\PdfController.php on line 44.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for http://localhost/Bib/public/example_01.pdf', 'C:\\xampp\\htdocs\\Bib\\app\\Controllers\\PdfController.php', 44)
+ 2 APPPATH\Controllers\PdfController.php(44): filesize('http://localhost/Bib/public/example_01.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PdfController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 20:33:26 --> filesize(): stat failed for http://localhost/Bib/public/example_01.pdf
+in APPPATH\Controllers\PdfController.php on line 44.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for http://localhost/Bib/public/example_01.pdf', 'C:\\xampp\\htdocs\\Bib\\app\\Controllers\\PdfController.php', 44)
+ 2 APPPATH\Controllers\PdfController.php(44): filesize('http://localhost/Bib/public/example_01.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PdfController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 20:33:31 --> filesize(): stat failed for http://localhost/Bib/public/example_01.pdf
+in APPPATH\Controllers\PdfController.php on line 44.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for http://localhost/Bib/public/example_01.pdf', 'C:\\xampp\\htdocs\\Bib\\app\\Controllers\\PdfController.php', 44)
+ 2 APPPATH\Controllers\PdfController.php(44): filesize('http://localhost/Bib/public/example_01.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PdfController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 20:33:36 --> filesize(): stat failed for http://localhost/Bib/public/example_01.pdf
+in APPPATH\Controllers\PdfController.php on line 44.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for http://localhost/Bib/public/example_01.pdf', 'C:\\xampp\\htdocs\\Bib\\app\\Controllers\\PdfController.php', 44)
+ 2 APPPATH\Controllers\PdfController.php(44): filesize('http://localhost/Bib/public/example_01.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PdfController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 20:33:37 --> filesize(): stat failed for http://localhost/Bib/public/example_01.pdf
+in APPPATH\Controllers\PdfController.php on line 44.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for http://localhost/Bib/public/example_01.pdf', 'C:\\xampp\\htdocs\\Bib\\app\\Controllers\\PdfController.php', 44)
+ 2 APPPATH\Controllers\PdfController.php(44): filesize('http://localhost/Bib/public/example_01.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PdfController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 20:33:42 --> filesize(): stat failed for http://localhost/Bib/public/example_01.pdf
+in APPPATH\Controllers\PdfController.php on line 44.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for http://localhost/Bib/public/example_01.pdf', 'C:\\xampp\\htdocs\\Bib\\app\\Controllers\\PdfController.php', 44)
+ 2 APPPATH\Controllers\PdfController.php(44): filesize('http://localhost/Bib/public/example_01.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PdfController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 20:33:47 --> filesize(): stat failed for http://localhost/Bib/public/example_01.pdf
+in APPPATH\Controllers\PdfController.php on line 44.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for http://localhost/Bib/public/example_01.pdf', 'C:\\xampp\\htdocs\\Bib\\app\\Controllers\\PdfController.php', 44)
+ 2 APPPATH\Controllers\PdfController.php(44): filesize('http://localhost/Bib/public/example_01.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PdfController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 20:36:01 --> filesize(): stat failed for http://localhost/Bib/public/example_01.pdf
+in APPPATH\Controllers\PdfController.php on line 44.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for http://localhost/Bib/public/example_01.pdf', 'C:\\xampp\\htdocs\\Bib\\app\\Controllers\\PdfController.php', 44)
+ 2 APPPATH\Controllers\PdfController.php(44): filesize('http://localhost/Bib/public/example_01.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PdfController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 20:36:06 --> filesize(): stat failed for http://localhost/Bib/public/example_01.pdf
+in APPPATH\Controllers\PdfController.php on line 44.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for http://localhost/Bib/public/example_01.pdf', 'C:\\xampp\\htdocs\\Bib\\app\\Controllers\\PdfController.php', 44)
+ 2 APPPATH\Controllers\PdfController.php(44): filesize('http://localhost/Bib/public/example_01.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PdfController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 20:36:07 --> filesize(): stat failed for http://localhost/Bib/public/example_01.pdf
+in APPPATH\Controllers\PdfController.php on line 44.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for http://localhost/Bib/public/example_01.pdf', 'C:\\xampp\\htdocs\\Bib\\app\\Controllers\\PdfController.php', 44)
+ 2 APPPATH\Controllers\PdfController.php(44): filesize('http://localhost/Bib/public/example_01.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PdfController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 20:36:13 --> filesize(): stat failed for http://localhost/Bib/public/example_01.pdf
+in APPPATH\Controllers\PdfController.php on line 44.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for http://localhost/Bib/public/example_01.pdf', 'C:\\xampp\\htdocs\\Bib\\app\\Controllers\\PdfController.php', 44)
+ 2 APPPATH\Controllers\PdfController.php(44): filesize('http://localhost/Bib/public/example_01.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PdfController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 20:36:43 --> filesize(): stat failed for http://localhost/Bib/public/example_01.pdf
+in APPPATH\Controllers\PdfController.php on line 44.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for http://localhost/Bib/public/example_01.pdf', 'C:\\xampp\\htdocs\\Bib\\app\\Controllers\\PdfController.php', 44)
+ 2 APPPATH\Controllers\PdfController.php(44): filesize('http://localhost/Bib/public/example_01.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PdfController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 20:36:46 --> filesize(): stat failed for http://localhost/Bib/public/example_01.pdf
+in APPPATH\Controllers\PdfController.php on line 44.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for http://localhost/Bib/public/example_01.pdf', 'C:\\xampp\\htdocs\\Bib\\app\\Controllers\\PdfController.php', 44)
+ 2 APPPATH\Controllers\PdfController.php(44): filesize('http://localhost/Bib/public/example_01.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PdfController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 20:36:50 --> filesize(): stat failed for http://localhost/Bib/public/example_01.pdf
+in APPPATH\Controllers\PdfController.php on line 44.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for http://localhost/Bib/public/example_01.pdf', 'C:\\xampp\\htdocs\\Bib\\app\\Controllers\\PdfController.php', 44)
+ 2 APPPATH\Controllers\PdfController.php(44): filesize('http://localhost/Bib/public/example_01.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PdfController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 20:38:30 --> filesize(): stat failed for http://localhost/Bib/public/example_01.pdf
+in APPPATH\Controllers\PdfController.php on line 44.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for http://localhost/Bib/public/example_01.pdf', 'C:\\xampp\\htdocs\\Bib\\app\\Controllers\\PdfController.php', 44)
+ 2 APPPATH\Controllers\PdfController.php(44): filesize('http://localhost/Bib/public/example_01.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PdfController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 20:38:32 --> filesize(): stat failed for http://localhost/Bib/public/example_01.pdf
+in APPPATH\Controllers\PdfController.php on line 44.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for http://localhost/Bib/public/example_01.pdf', 'C:\\xampp\\htdocs\\Bib\\app\\Controllers\\PdfController.php', 44)
+ 2 APPPATH\Controllers\PdfController.php(44): filesize('http://localhost/Bib/public/example_01.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PdfController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 20:38:37 --> filesize(): stat failed for http://localhost/Bib/public/example_01.pdf
+in APPPATH\Controllers\PdfController.php on line 44.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for http://localhost/Bib/public/example_01.pdf', 'C:\\xampp\\htdocs\\Bib\\app\\Controllers\\PdfController.php', 44)
+ 2 APPPATH\Controllers\PdfController.php(44): filesize('http://localhost/Bib/public/example_01.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PdfController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 20:41:52 --> filesize(): stat failed for http://localhost/Bib/public/example_01.pdf
+in APPPATH\Controllers\PdfController.php on line 44.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for http://localhost/Bib/public/example_01.pdf', 'C:\\xampp\\htdocs\\Bib\\app\\Controllers\\PdfController.php', 44)
+ 2 APPPATH\Controllers\PdfController.php(44): filesize('http://localhost/Bib/public/example_01.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PdfController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 20:41:53 --> filesize(): stat failed for http://localhost/Bib/public/example_01.pdf
+in APPPATH\Controllers\PdfController.php on line 44.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for http://localhost/Bib/public/example_01.pdf', 'C:\\xampp\\htdocs\\Bib\\app\\Controllers\\PdfController.php', 44)
+ 2 APPPATH\Controllers\PdfController.php(44): filesize('http://localhost/Bib/public/example_01.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PdfController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 20:41:58 --> filesize(): stat failed for http://localhost/Bib/public/example_01.pdf
+in APPPATH\Controllers\PdfController.php on line 44.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for http://localhost/Bib/public/example_01.pdf', 'C:\\xampp\\htdocs\\Bib\\app\\Controllers\\PdfController.php', 44)
+ 2 APPPATH\Controllers\PdfController.php(44): filesize('http://localhost/Bib/public/example_01.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PdfController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-13 20:45:23 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL InsertarAl...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CALL InsertarAl...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CALL InsertarAl...')
+#3 C:\xampp\htdocs\Bib\app\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAl...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerAlumno.php(44): App\Models\Alumno->insertarAlumno(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-13 20:45:23 --> Duplicate entry '1' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Alumno.php(16): CodeIgniter\Database\BaseConnection->query('CALL InsertarAlumno(?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerAlumno.php(44): App\Models\Alumno->insertarAlumno([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerAlumno->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerAlumno))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 21:18:27 --> require_once(C:\xampp\htdocs\Bib\app\ThirdParty/TCPDF/tcpdf_include.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\PdfController.php on line 12.
+ 1 APPPATH\Controllers\PdfController.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(C:\\xampp\\htdocs\\Bib\\app\\ThirdParty/TCPDF/tcpdf_include.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\Bib\\app\\Controllers\\PdfController.php', 12)
+ 2 APPPATH\Controllers\PdfController.php(12): require_once()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PdfController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 23:42:20 --> Unsupported operand types: string + string
+in APPPATH\Controllers\PdfController.php on line 63.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PdfController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

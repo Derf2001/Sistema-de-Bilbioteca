@@ -1,0 +1,62 @@
+CRITICAL - 2024-04-12 18:01:44 --> date(): Argument #2 ($timestamp) must be of type ?int, string given
+in APPPATH\Controllers\ControllerMonitoreo_Computo.php on line 113.
+ 1 APPPATH\Controllers\ControllerMonitoreo_Computo.php(113): date('Y-m-d', 'NaN')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo_Computo->RGAFechaComputo()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo_Computo))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-12 18:01:48 --> date(): Argument #2 ($timestamp) must be of type ?int, string given
+in APPPATH\Controllers\ControllerMonitoreo_Computo.php on line 113.
+ 1 APPPATH\Controllers\ControllerMonitoreo_Computo.php(113): date('Y-m-d', 'NaN')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo_Computo->RGAFechaComputo()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo_Computo))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-12 18:04:07 --> date(): Argument #2 ($timestamp) must be of type ?int, string given
+in APPPATH\Controllers\ControllerMonitoreo_Computo.php on line 113.
+ 1 APPPATH\Controllers\ControllerMonitoreo_Computo.php(113): date('Y-m-d', 'NaN')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo_Computo->RGAFechaComputo()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo_Computo))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-12 18:09:55 --> foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\PdfController.php on line 139.
+ 1 APPPATH\Controllers\PdfController.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\Bib\\app\\Controllers\\PdfController.php', 139)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PdfController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-12 19:42:58 --> date(): Argument #2 ($timestamp) must be of type ?int, string given
+in APPPATH\Controllers\ControllerMonitoreo_Computo.php on line 113.
+ 1 APPPATH\Controllers\ControllerMonitoreo_Computo.php(113): date('Y-m-d', 'NaN')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo_Computo->RGAFechaComputo()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo_Computo))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-12 19:43:00 --> date(): Argument #2 ($timestamp) must be of type ?int, string given
+in APPPATH\Controllers\ControllerMonitoreo_Computo.php on line 113.
+ 1 APPPATH\Controllers\ControllerMonitoreo_Computo.php(113): date('Y-m-d', 'NaN')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerMonitoreo_Computo->RGAFechaComputo()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerMonitoreo_Computo))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-12 19:47:51 --> mysqli_sql_exception: Duplicate entry '0322150014' for key 'PRIMARY' in C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\Bib\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO asi...', 0)
+#1 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO asi...')
+#2 C:\xampp\htdocs\Bib\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO asi...')
+#3 C:\xampp\htdocs\Bib\app\Models\Principal.php(20): CodeIgniter\Database\BaseConnection->query('INSERT INTO asi...', Array)
+#4 C:\xampp\htdocs\Bib\app\Controllers\ControllerPrincipal.php(36): App\Models\Principal->insertarAsiento(Array)
+#5 C:\xampp\htdocs\Bib\system\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->add()
+#6 C:\xampp\htdocs\Bib\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+#7 C:\xampp\htdocs\Bib\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Bib\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-04-12 19:47:51 --> Duplicate entry '0322150014' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Principal.php(20): CodeIgniter\Database\BaseConnection->query('INSERT INTO asientos VALUES (?, ?)', [...])
+ 2 APPPATH\Controllers\ControllerPrincipal.php(36): App\Models\Principal->insertarAsiento([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ControllerPrincipal->add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ControllerPrincipal))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
